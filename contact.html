@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.theme.default.min.css"
+    />
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-css/bootstrap-reboot.min.css"
+    />
+
+    <!-- font-awesome -------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
+
+    <!-- custom css --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/contact.css" />
+
+    <!-- mediaquery --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
+  </head>
+  <body>
+    <!-- header -------------------------------------------------------------------------------- -->
+
+    <header class="container-fluid" id="header">
+      <div
+        class="container-ctm d-flex justify-content-between align-items-center"
+      >
+        <div class="logo navbar-brand">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="Bigbyte Logo" />
+          </a>
+        </div>
+
+        <!-- menu --------------------------------------------------------------- -->
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Company</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Manufacturing </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">HealthCare </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Digital(IOT)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile menu toogle ------------------------------------------------- -->
+        <button
+          class="mobile-menu-toggle"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- mobile menu overlay ------------------------------------------------- -->
+            <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav
+              class="navbar navbar-expand align-items-center justify-content-center"
+            >
+              <div class="">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul
+                    class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                      <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Manufacturing </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">HealthCare </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Digital(IOT)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <!-- side button ---------------------------------------------------------------------- -->
+
+        <div class="btn-ctm">
+          <button id="#">Login</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- contact banner ------------------------------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="contact-banner">
+      <div class="container-ctm row align-items-center">
+        <div class="col-md-12 align-items-center banner-text">
+          <h1 class="abt-hd1">
+            We're ready to
+            <span class="spl-txt"
+              >help you<br />
+              transform your business</span
+            >
+          </h1>
+          <span class="bnr-decoration"></span>
+          <p class="bnr-p-txt">
+            While others promise digital transformation, we deliver measurable
+            outcomes: 30% <br />cost reduction, 40% efficiency gains, and $50M+
+            in proven savings for Fortune 500 clients
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section ----------------------------------------------------------- -->
+
+    <section class="container-fluid" id="contact-sec">
+      <div class="container-ctm">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-wrap">
+              <h2 class="hd2">Get in Touch</h2>
+              <p>
+                Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
+                leo molestie vel, ornare non id blandit netus.
+              </p>
+              <form action="" method="post">
+                <input type="text" name="fname" id="fname" placeholder="Name" />
+                <input type="email" name="email" id="femail" placeholder="" />
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-inner-wrap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -------------------------------------------------------------------------------------- -->
+    <footer class="containerfluid" id="footer">
+      <div class="container-ctm row g-4">
+        <div class="footer-col-1 col-xl-3 col-md-6 col-12">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="" srcset=""
+          /></a>
+          <p>
+            We transform business vision into market-leading digital solutions.
+            Our enterprise-grade implementations drive innovation, operational
+            excellence, and sustainable competitive advantage.
+          </p>
+        </div>
+        <div class="footer-col-2 col-xl-2 col-md-4 col-6">
+          <h5 class="hd5">Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3 col-xl-3 col-md-5 col-12">
+          <h5 class="hd5">Services</h5>
+          <ul>
+            <li><a href="">LLMs & Gen AI Strategy</a></li>
+            <li><a href="">Cloud Services & Platform</a></li>
+            <li><a href="">Big Data, Analytics & BI</a></li>
+            <li><a href="">Network & Optical Engineering</a></li>
+            <li><a href="">Cybersecurity</a></li>
+            <li><a href="">Enterprise Consultation</a></li>
+            <li><a href="">Product Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4 col-xl-2 col-md-3 col-6">
+          <h5 class="hd5">Industries</h5>
+          <ul>
+            <li><a href="">Manufacturing </a></li>
+            <li><a href="">HealthCare</a></li>
+            <li><a href="">Retail</a></li>
+            <li><a href="">Banking & Finance </a></li>
+            <li><a href="">Insurance</a></li>
+            <li><a href="">Digital(IOT)</a></li>
+            <li><a href="">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-5 col-xl-2 col-md-6">
+          <h5 class="hd5">Follow Us</h5>
+          <ul class="d-flex align-items-center">
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-gitlab"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-figma"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <svg
+          class="editorial"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 12"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    58 18 88 18
+    v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
+          </g>
+        </svg>
+      </div>
+    </footer>
+
+    <!-- javascript --------------------------------------------------------------------------------- -->
+
+    <!-- jquery ------------------------------------------------------------------------------------- -->
+    <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <script src="assets/js/owlcarousel-js/owl.carousel.min.js"></script>
+
+    <!-- custom js------------------------------------------------------------------------------------ -->
+    <script src="assets/js/custom-js/script.js"></script>
+  </body>
+</html>

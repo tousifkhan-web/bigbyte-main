@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bigbyte</title>
+
+    <!-- google font ---------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.theme.default.min.css"
+    />
+
+    <!-- fancybox ------------------------------------------------------ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+
+    <!-- font-awesome -------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-css/bootstrap-reboot.min.css"
+    />
+
+    <!-- custom css --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/about-us.css" />
+    <!-- mediaquery --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
+  </head>
+  <body>
+    <!-- header -------------------------------------------------------------------------------- -->
+
+    <header class="container-fluid" id="header">
+      <div
+        class="container-ctm d-flex justify-content-between align-items-center"
+      >
+        <div class="logo navbar-brand">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="Bigbyte Logo" />
+          </a>
+        </div>
+
+        <!-- menu --------------------------------------------------------------- -->
+    
+    
+        <nav class="navbar navbar-expand-lg">
+          <div class="">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Company</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="cloud-service.html"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="big-data.html"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="enterprise.html"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Manufacturing </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">HealthCare </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Digital(IOT)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+        <!-- Mobile menu toogle ------------------------------------------------- -->
+        <button
+          class="mobile-menu-toggle"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- mobile menu overlay ------------------------------------------------- -->
+         <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav
+              class="navbar navbar-expand align-items-center justify-content-center"
+            >
+              <div class="">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul
+                    class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="cloud-service.html"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="big-data.html"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="enterprise.html"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                      <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Manufacturing </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">HealthCare </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Digital(IOT)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- side button ---------------------------------------------------------------------- -->
+
+        <div class="btn-ctm">
+          <button id="#">Login</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- about banner -------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="about-banner">
+      <div class="container-ctm row align-items-center">
+        <div class="col-md-12 align-items-center banner-text">
+          <h1 class="abt-hd1">
+            The <span class="spl-txt"> AI Partner </span> That <br />
+            Delivers Real Business Results
+          </h1>
+          <span class="bnr-decoration"></span>
+          <p class="bnr-p-txt">
+            While others promise digital transformation, we deliver measurable
+            outcomes: 30% <br />
+            cost reduction, 40% efficiency gains, and $50M+ in proven savings
+            for Fortune 500
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about ---------------------------------------------------------------------------------------->
+
+    <section class="container-fluid" id="about">
+      <div class="container-ctm">
+        <div class="row justify-content-between align-items-center gap-5">
+          <div class="left col-lg-5">
+            <img src="assets/image/about-img.webp" alt="" srcset="" />
+          </div>
+          <div class="right col-lg-6">
+            <h3 class="hd3 mb-3">
+              <span class="spl-txt">Bigbyte</span>, transforms businesses
+              through AI solutions that actually work
+            </h3>
+            <p class="mb-4">
+              We don't just implement technology—we deliver measurable
+              competitive advantages that impact your bottom line from day one.
+              Our proven methodologies turn complex AI and cloud technologies
+              into simple business results: reduced costs, accelerated growth,
+              and market leadership that competitors can't match. Every
+              partnership we create delivers immediate ROI and long-term
+              advantage. We make AI an integral part of your business success by
+              identifying high-impact opportunities, leveraging your data
+              assets, and building decision frameworks that fundamentally
+              transform operations. Your success is our only measure of
+              achievement.
+            </p>
+            <div>
+              <a class="spl-btn" href="#">Transform Your Business</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why choose us ---------------------------------------------------------------->
+
+    <section class="container-fluid" id="why-bigbyte">
+      <div class="container-ctm row align-items-center">
+        <div class="left col-lg-12">
+          <div class="choose-text">
+            <h2 class="hd2 mb-5">
+              Why Smart Enterprises <br />
+              Choose <span class="spl-txt">Bigbyte</span>
+            </h2>
+          </div>
+          <div class="row">
+            <!-- image -->
+            <div class="col-md-3">
+              <div class="image-card">
+                <img src="assets/image/card4.jpg" alt="Why Choose Bigbyte" />
+              </div>
+            </div>
+            <!-- Card 1 -->
+            <div class="col-md-3">
+              <div class="choose-card">
+                <div
+                  class="top d-flex justify-content-between align-items-start"
+                >
+                  <img src="assets/image/card1.svg" alt="icon" />
+                  <p class="step-num">01</p>
+                </div>
+                <h4 class="hd4 mt-3 choose-card-txt">Your Success Partner</h4>
+                <p>
+                  We become part of your leadership team, delivering value from
+                  day one. Our collaborative approach transforms tech into
+                  measurable business results.
+                </p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+              <div class="choose-card">
+                <div
+                  class="top d-flex justify-content-between align-items-start"
+                >
+                  <img src="assets/image/card2.svg" alt="icon" />
+                  <p class="step-num">02</p>
+                </div>
+                <h4 class="hd4 mt-3 choose-card-txt">Rapid Results Delivery</h4>
+                <p>
+                  Get results in 60–90 days. We adapt quickly to change and
+                  focus on speed, innovation, and guaranteed outcomes that give
+                  you an edge.
+                </p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+              <div class="choose-card">
+                <div
+                  class="top d-flex justify-content-between align-items-start"
+                >
+                  <img src="assets/image/card3.svg" alt="icon" />
+                  <p class="step-num">03</p>
+                </div>
+                <h4 class="hd4 mt-3 choose-card-txt">
+                  Proven Technical Excellence
+                </h4>
+                <p>
+                  Our AI experts deliver Fortune 500-level solutions backed by
+                  innovation, leadership, and measurable technical excellence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12"></div>
+      </div>
+    </section>
+
+
+     <!-- values ------------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="values">
+      <div class="container-ctm">
+        <div class="">
+          <div class="top">
+            <img src="assets/image/values-top-img.webp" alt="" srcset="" />
+            <h2 class="hd2">
+              <span class="spl-txt">Core Values</span> That Drive Your Success
+            </h2>
+          </div>
+          <div class="bottom row align-items-end">
+            <div class="col-md-6 col-xl-3 g-3">
+              <div class="card-ctm card1 p-4 text-center">
+                <img src="assets/image/values-icon-1.webp" alt="" srcset="" />
+                <h4 class="hd4 mt-3 mb-3">Practical Innovation</h4>
+                <p>
+                  We deliver measurable business outcomes, not just technology.
+                  Every solution comes with clear success metrics, timeline
+                  commitments, and guaranteed results that impact your bottom
+                  line. Our track record speaks for itself.
+                </p>
+                <img
+                  class="arrow"
+                  src="assets/image/arrow-1.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3 g-3">
+              <div class="card-ctm card2 p-4 text-center">
+                <img src="assets/image/values-icon-2.webp" alt="" srcset="" />
+                <h4 class="hd4 mt-3 mb-3">Smart follow-up questions</h4>
+                <p>
+                  We focus on AI solutions that work in the real world. Our
+                  approach combines cutting-edge technology with practical
+                  business sense, ensuring every implementation delivers
+                  immediate value and long-term competitive advantage.
+                </p>
+                <img
+                  class="arrow"
+                  src="assets/image/arrow-2.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3 g-3">
+              <div class="card-ctm card3 p-4 text-center">
+                <img src="assets/image/values-icon-3.webp" alt="" srcset="" />
+                <h4 class="hd4 mt-3 mb-3">Partnership Approach</h4>
+                <p>
+                  We work as an extension of your team, not an external vendor.
+                  Our collaborative process eliminates communication gaps,
+                  accelerates decision-making, and ensures knowledge transfer
+                  that empowers your organization.
+                </p>
+                <img
+                  class="arrow"
+                  src="assets/image/arrow-1.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3 g-3">
+              <div class="card-ctm card4 p-4 text-center">
+                <img src="assets/image/values-icon-3.webp" alt="" srcset="" />
+                <h4 class="hd4 mt-3 mb-3">Your Success First</h4>
+                <p>
+                  Your business goals drive every decision we make. We measure
+                  our success by your results—increased revenue, reduced costs,
+                  improved efficiency, and market leadership. When you win, we
+                  win.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   <!-- testimonial -------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="testimonial">
+      <div class="container-ctm">
+        <div class="top mb-5 d-flex flex-column align-items-center">
+          <h2 class="hd2">
+            <span class="spl-txt">Certified</span>
+          </h2>
+          <h2 class="hd2 mb-4 text-center">
+            Generative AI & LLMs
+          </h2>
+          <p class="text-center">
+           Reduce manual work by 50% and improve accuracy by 90%
+          </p>
+        </div>
+        <div class="bottom row g-4">
+          <div class="col-md-6 col-xl-3 d-flex flex-column">
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/brain1.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="card-ctm">
+              <p class="num">1.</p>
+              <h4 class="hd4">Cloud & Infrastructure</h4>
+              <p class="card-txt">
+            Cut infrastructure costs by 40% while boosting performance
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 d-flex flex-column flex-xl-column-reverse"
+          >
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/network1.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="card-ctm">
+              <p class="num">2.</p>
+              <h4 class="hd4">Advanced Analytics & BI</h4>
+              <p class="card-txt">
+               Increase revenue by 25% through data-driven decisions
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 d-flex flex-column">
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/analytics1.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="card-ctm">
+              <p class="num">3.</p>
+              <h4 class="hd4">Enterprise Architecture</h4>
+              <p class="card-txt">
+               Ensure 99.9% uptime for mission-critical operations
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 d-flex flex-column flex-xl-column-reverse"
+          >
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/cloud1.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="card-ctm">
+              <p class="num">4.</p>
+              <h4 class="hd4">Enterprise Architecture</h4>
+              <p class="card-txt">
+              Ensure 99.9% uptime for mission-critical operations
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- package ----------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="package">
+      <div class="container-ctm">
+        <div class="top d-flex justify-content-between align-items-center">
+          <div class="left">
+            <h2 class="hd2">
+              Transform Business Challenges Into <span class="spl-txt">Competitive Advantages  </span>
+            </h2>
+            <!-- <h2 class="hd2">Package Includes</h2> -->
+          </div>
+          <div class="right d-flex gap-2" id="package-carousel-nav">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              id="package-nav-left"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center"
+              id="package-nav-right"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme package-slider bottom">
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-1.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+                Optimize Operations
+              </h4>
+              <p class="card-txt text-center">
+             Build enterprise-grade solutions that boost operational efficiency while ensuring scalability, security, and future adaptability that keeps you ahead of competition.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-2.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+                Create Sustainable Advantage
+              </h4>
+              <p class="card-txt text-center">
+                Implement strategic AI, analytics, and cloud-native architectures that deliver lasting competitive benefits aligned with your business priorities and market opportunities.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-3.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Drive Operational Excellence</h4>
+              <p class="card-txt text-center">
+                Automate intelligent processes that reduce costs while enhancing speed, quality, and customer experience through proven methodologies that work from day one
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-4.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+              Enable Smart Decisions
+              </h4>
+              <p class="card-txt text-center">
+               Transform enterprise data into actionable intelligence through integrated AI/ML frameworks that provide predictive insights and accelerate profitable decision-making.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-5.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Accelerate Digital Transformation</h4>
+              <p class="card-txt text-center">
+               Implement cross-functional strategies that align technology investments with core business objectives, ensuring maximum ROI and strategic market positioning.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-6.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+                Build Innovation Capabilities
+              </h4>
+              <p class="card-txt text-center">
+               Establish frameworks that ensure continuous evolution of your digital capabilities while maintaining operational excellence and competitive leadership
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -------------------------------------------------------------------------------------- -->
+    <footer class="containerfluid" id="footer">
+      <div class="container-ctm row g-4">
+        <div class="footer-col-1 col-xl-3 col-md-6 col-12">
+          <a href="#"> <img src="assets/image/logo.webp" alt="" srcset="" /></a>
+          <p>
+            We transform business vision into market-leading digital solutions.
+            Our enterprise-grade implementations drive innovation, operational
+            excellence, and sustainable competitive advantage.
+          </p>
+        </div>
+        <div class="footer-col-2 col-xl-2 col-md-4 col-6">
+          <h5 class="hd5">Company</h5>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3 col-xl-3 col-md-5 col-12">
+          <h5 class="hd5">Services</h5>
+          <ul>
+            <li><a href="">LLMs & Gen AI Strategy</a></li>
+            <li><a href="">Cloud Services & Platform</a></li>
+            <li><a href="">Big Data, Analytics & BI</a></li>
+            <li><a href="">Network & Optical Engineering</a></li>
+            <li><a href="">Cybersecurity</a></li>
+            <li><a href="">Enterprise Consultation</a></li>
+            <li><a href="">Product Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4 col-xl-2 col-md-3 col-6">
+          <h5 class="hd5">Industries</h5>
+          <ul>
+            <li><a href="">Manufacturing </a></li>
+            <li><a href="">HealthCare</a></li>
+            <li><a href="">Retail</a></li>
+            <li><a href="">Banking & Finance </a></li>
+            <li><a href="">Insurance</a></li>
+            <li><a href="">Digital(IOT)</a></li>
+            <li><a href="">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-5 col-xl-2 col-md-6">
+          <h5 class="hd5">Follow Us</h5>
+          <ul class="d-flex align-items-center">
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-gitlab"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-figma"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <svg
+          class="editorial"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 12"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    58 18 88 18
+    v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
+          </g>
+        </svg>
+      </div>
+    </footer>
+
+    <!-- javascript --------------------------------------------------------------------------------- -->
+
+    <!-- jquery ------------------------------------------------------------------------------------- -->
+    <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <script src="assets/js/owlcarousel-js/owl.carousel.min.js"></script>
+
+    <!-- custom js------------------------------------------------------------------------------------ -->
+    <script src="assets/js/custom-js/script.js"></script>
+  </body>
+</html>

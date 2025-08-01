@@ -1,0 +1,246 @@
+@media (max-width: 1750px) {
+  .container-ctm {
+    max-width: 1320px;
+  }
+  #values div.bottom .card-ctm > .arrow {
+    max-width: 50%;
+    right: -60px;
+  }
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1440px) {
+  .container-ctm {
+    max-width: 1140px;
+  }
+
+  #values div.bottom .card3 > .arrow {
+    top: 0px;
+  }
+  #values div.bottom .card4 {
+    margin-bottom: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  #solution .bottom-extra {
+    display: none;
+  }
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+  .container-ctm {
+    max-width: 960px;
+  }
+
+  #solution .bottom {
+    height: 600px;
+  }
+
+  #solution .bottom .center-box-6 {
+    display: none;
+  }
+
+  #values div.bottom {
+    margin-top: 0px;
+  }
+  #values div.bottom .card2,
+  #values div.bottom .card3,
+  #values div.bottom .card4 {
+    margin-bottom: 0px;
+  }
+  #values div.bottom .card-ctm > .arrow {
+    display: none;
+  }
+  #footer .footer-col-1 {
+    order: 1;
+  }
+  #footer .footer-col-2 {
+    order: 3;
+  }
+  #footer .footer-col-3 {
+    order: 4;
+  }
+  #footer .footer-col-4 {
+    order: 5;
+  }
+  #footer .footer-col-5 {
+    order: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  #header .mobile-menu-toggle {
+    display: none;
+  }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container-ctm {
+    max-width: 720px;
+  }
+
+  #header .container-ctm .btn-ctm {
+    display: none;
+  }
+  #about .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .right h3,
+  #about .right p {
+    text-align: center;
+  }
+  #contact .container-ctm > .contact-cta {
+    flex-direction: column;
+  }
+  #contact .container-ctm > .contact-cta .left > p {
+    text-align: center;
+  }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .container-ctm {
+    max-width: 540px;
+  }
+
+  #banner .container-ctm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    row-gap: 30px;
+  }
+
+  #banner .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #banner .hd1 {
+    text-align: center;
+  }
+
+  #banner .left .bnr-decoration {
+    max-width: 100%;
+  }
+  #banner .left .bnr-p-txt {
+    text-align: center;
+  }
+
+  #banner .spl-btn {
+    margin: 0px auto;
+  }
+  #about .container-ctm > div {
+    padding: 100px 60px;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+  }
+  #values .container-ctm > div {
+    padding: 100px 60px;
+    /* background-color: var(--bg-blue); */
+    clip-path: polygon(0 0, 100% 5%, 100% 97%, 0% 100%);
+  }
+
+  #values div.bottom .card-ctm > .arrow {
+    display: none;
+  }
+  #footer .footer-col-1 {
+    order: 1;
+  }
+  #footer .footer-col-2 {
+    order: 2;
+  }
+  #footer .footer-col-3 {
+    order: 4;
+  }
+  #footer .footer-col-4 {
+    order: 3;
+  }
+  #footer .footer-col-5 {
+    order: 5;
+  }
+
+  #footer .footer-col-1,
+  #footer .footer-col-2,
+  #footer .footer-col-3,
+  #footer .footer-col-4,
+  #footer .footer-col-5 {
+    text-align: center;
+  }
+  #footer .footer-col-5 ul {
+    justify-content: center;
+  }
+  #llm-portfolio .bottom > div {
+    align-items: center;
+  }
+  #llm-portfolio .bottom > div p:nth-child(3) {
+    text-align: center;
+  }
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .container-ctm {
+    max-width: 100%;
+  }
+  #about .container-ctm > div {
+    padding: 100px 15px;
+  }
+
+  /* #solution .bottom {
+    display: none;
+  } */
+
+  #solution .bottom .center-box-2,
+  #solution .bottom .center-box-3,
+  #solution .bottom .center-box-4,
+  #solution .bottom .center-box-5 {
+    display: none;
+  }
+
+  #solution .bottom-extra {
+    margin-bottom: 0px;
+  }
+
+  #solution .bottom {
+    height: 400px;
+  }
+  #values .container-ctm > div {
+    padding: 100px 15px;
+  }
+  .hd2,
+  .hd3 {
+    text-align: center;
+  }
+  #about,
+  #solution,
+  #testimonial,
+  #values,
+  #package,
+  #career-sec,
+  #llm-portfolio,
+  #llm-success {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #package .top {
+    flex-direction: column;
+  }
+  #package .top .right {
+    display: none !important;
+  }
+
+  #package .bottom {
+    margin-top: 30px;
+  }
+  #contact .container-ctm > .contact-cta {
+    padding: 50px;
+  }
+  #llm-portfolio .bottom > div {
+    padding: 30px 0px;
+  }
+}
