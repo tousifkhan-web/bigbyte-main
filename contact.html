@@ -148,7 +148,7 @@
         </button>
 
         <!-- mobile menu overlay ------------------------------------------------- -->
-            <div
+        <div
           class="offcanvas offcanvas-start"
           tabindex="-1"
           id="offcanvasExample"
@@ -183,69 +183,69 @@
                       <a class="nav-link" href="#">Company</a>
                     </li>
                     <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Services
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="llm-gen-ai.html"
-                        >LLMs & Gen AI Strategy</a
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
                       >
+                        Services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="llm-gen-ai.html"
+                            >LLMs & Gen AI Strategy</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Cloud Services & Platform</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Big Data, Analytics & BI</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Enterprise Consultation</a
+                          >
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Cloud Services & Platform</a
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
                       >
+                        Industries
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">Manufacturing </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">HealthCare </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Retail</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Digital(IOT)</a>
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Big Data, Analytics & BI</a
-                      >
+                    <li class="nav-item">
+                      <a class="nav-link" href="career.html">Careers</a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Enterprise Consultation</a
-                      >
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
-                  </ul>
-                </li>
-                      <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Industries
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">Manufacturing </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">HealthCare </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Retail</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Digital(IOT)</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="career.html">Careers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
                   </ul>
                 </div>
               </div>
@@ -288,21 +288,94 @@
     <section class="container-fluid" id="contact-sec">
       <div class="container-ctm">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-8 left d-flex align-items-center">
             <div class="form-wrap">
               <h2 class="hd2">Get in Touch</h2>
               <p>
                 Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
                 leo molestie vel, ornare non id blandit netus.
               </p>
-              <form action="" method="post">
-                <input type="text" name="fname" id="fname" placeholder="Name" />
-                <input type="email" name="email" id="femail" placeholder="" />
+              <form action="" method="post" id="f-form">
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Name *"
+                  required
+                />
+                <input
+                  type="email"
+                  name="femail"
+                  id="femail"
+                  placeholder="Email *"
+                  reqired
+                />
+                <input
+                  type="tel"
+                  name="fphone"
+                  id="fphone"
+                  placeholder="Phone number *"
+                  required
+                />
+                <select id="ffind-us" name="ffind-us" required>
+                  <option value="" disabled selected>
+                    How did you find us? *
+                  </option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <input type="submit" value="Send" id="f-submit" />
               </form>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="contact-inner-wrap"></div>
+          <div class="col-md-4 right">
+            <div class="contact-inner-wrap">
+              <div class="top">
+                <p>Contact Information</p>
+                <p>Say something to start a live chat!</p>
+              </div>
+              <div class="middle">
+                <div class="d-flex">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <div>
+                    <a href="tel:++1012 3456 789">+1012 3456 789</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <a href="mailto:info@bigbyte.ai">info@bigbyte.ai</a>
+                    <a href="mailto:sales@bigbyte.ai">sales@bigbyte.ai</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <a href=""
+                      >132 Dartmouth Street Boston,<br />Massachusetts 02156
+                      United States</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <ul class="d-flex">
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="deco1"></div>
+              <div class="deco2"></div>
+            </div>
           </div>
         </div>
       </div>
