@@ -44,6 +44,14 @@ p.bnr-p-txt {
   padding: 50px 300px 50px 100px;
 }
 
+#contact-sec .row .left .form-wrap > p:nth-child(2) {
+  color: #7a7d9c;
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
 #contact-sec #f-form input,
 #contact-sec #f-form select {
   display: inline-block;
