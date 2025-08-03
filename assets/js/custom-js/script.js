@@ -25,21 +25,25 @@ $(".package-slider").owlCarousel({
   },
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  let currentPath = window.location.pathname.split("/").pop();
 
- document.addEventListener("DOMContentLoaded", function () {
+  if (currentPath === "") currentPath = "index.html";
 
-    let currentPath = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-link");
 
-    if (currentPath === "") currentPath = "index.html";
-
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    navLinks.forEach((link) => {
-      const linkPath = link.getAttribute("href");
-      if (linkPath === currentPath) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
+  navLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
   });
+});
+
+// counter js
+$(".counter").countUp({
+  time: 1000,
+  delay: 10,
+});
