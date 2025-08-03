@@ -189,12 +189,6 @@
   #footer .footer-col-5 ul {
     justify-content: center;
   }
-  #llm-portfolio .bottom > div {
-    align-items: center;
-  }
-  #llm-portfolio .bottom > div p:nth-child(3) {
-    text-align: center;
-  }
 
   #contact-sec .row .left {
     padding: 50px;
