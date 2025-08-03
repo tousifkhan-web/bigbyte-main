@@ -45,11 +45,12 @@ p.bnr-p-txt {
 }
 
 #llm-portfolio .bottom > div p:nth-child(2) {
-  color: #27156e;
-  font-family: var(--fontfamily1);
-
-  font-style: normal;
-  font-weight: 700;
+    color: #27156e;
+    font-family: var(--fontfamily1);
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 21px;
 }
 
 #llm-portfolio .bottom > div p:nth-child(3) {
