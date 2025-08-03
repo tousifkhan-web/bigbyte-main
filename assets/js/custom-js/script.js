@@ -25,6 +25,7 @@ $(".package-slider").owlCarousel({
   },
 });
 
+//this is coment
 document.addEventListener("DOMContentLoaded", function () {
   let currentPath = window.location.pathname.split("/").pop();
 
