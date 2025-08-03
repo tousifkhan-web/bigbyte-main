@@ -47,17 +47,31 @@ $(".package-slider").owlCarousel({
 
 
 
+//this is coment
+document.addEventListener("DOMContentLoaded", function () {
+  let currentPath = window.location.pathname.split("/").pop();
+
+  if (currentPath === "") currentPath = "index.html";
+
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});
+
+// counter js
+$(".counter").countUp({
+  time: 1000,
+  delay: 10,
+});
 
 
-
-
-
-
-
-
-
-
-  
 
   document.addEventListener("DOMContentLoaded", () => {
     const tabButtons = document.querySelectorAll(".tab-btn");
