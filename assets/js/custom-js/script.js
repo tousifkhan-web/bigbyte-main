@@ -25,23 +25,53 @@ $(".package-slider").owlCarousel({
   },
 });
 
+//this is coment
+document.addEventListener("DOMContentLoaded", function () {
+  let currentPath = window.location.pathname.split("/").pop();
 
- document.addEventListener("DOMContentLoaded", function () {
+  if (currentPath === "") currentPath = "index.html";
 
-    let currentPath = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-link");
 
-    if (currentPath === "") currentPath = "index.html";
+  navLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});
 
-    const navLinks = document.querySelectorAll(".nav-link");
+// counter js
+$(".counter").countUp({
+  time: 1000,
+  delay: 10,
+});
 
-    navLinks.forEach((link) => {
-      const linkPath = link.getAttribute("href");
-      if (linkPath === currentPath) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
+document.addEventListener("DOMContentLoaded", () => {
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const head = document.querySelector(".center-head");
+  const txt = document.querySelector(".center-txt");
+
+  // Show the default active tab on load
+  const activeTab = document.querySelector(".tab-btn.active");
+  if (activeTab) {
+    head.textContent = activeTab.dataset.title;
+    txt.textContent = activeTab.dataset.text;
+  }
+
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all
+      tabButtons.forEach((btn) => btn.classList.remove("active"));
+
+      // Add active to current
+      button.classList.add("active");
+
+      // Update center content
+      head.textContent = button.dataset.title;
+      txt.textContent = button.dataset.text;
     });
   });
-
-
+});
