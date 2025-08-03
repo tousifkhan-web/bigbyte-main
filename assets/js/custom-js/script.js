@@ -43,3 +43,45 @@ $(".package-slider").owlCarousel({
       }
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const head = document.querySelector(".center-head");
+    const txt = document.querySelector(".center-txt");
+
+    // Show the default active tab on load
+    const activeTab = document.querySelector(".tab-btn.active");
+    if (activeTab) {
+      head.textContent = activeTab.dataset.title;
+      txt.textContent = activeTab.dataset.text;
+    }
+
+    tabButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        // Remove active class from all
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+
+        // Add active to current
+        button.classList.add("active");
+
+        // Update center content
+        head.textContent = button.dataset.title;
+        txt.textContent = button.dataset.text;
+      });
+    });
+  });

@@ -558,7 +558,7 @@ ul.navbar-nav {
   width: 700px;
   height: 700px;
   border: 1px solid var(--blue);
-  animation: rotate6 15s forwards linear infinite;
+  /* animation: rotate6 15s forwards linear infinite; */
   border-radius: 50%;
   position: relative;
 }
@@ -576,7 +576,7 @@ ul.navbar-nav {
 #solution .bottom .center-box-6 .inner .inner-box .inner-box-item {
   width: 200px;
   /* border: 1px solid purple; */
-  animation: rotate6 15s reverse linear infinite;
+  /* animation: rotate6 15s reverse linear infinite; */
 }
 
 #solution .bottom .center-box-6 .inner .inner-box {
