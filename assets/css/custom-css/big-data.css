@@ -1,0 +1,8 @@
+.blu-txt {
+    color: #29176f;
+    font-family: var(--fontfamily1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+}

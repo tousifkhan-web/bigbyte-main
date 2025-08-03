@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.theme.default.min.css"
+    />
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-css/bootstrap-reboot.min.css"
+    />
+
+    <!-- font-awesome -------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
+
+    <!-- custom css --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/llm-gen-ai.css" />
+        <link rel="stylesheet" href="assets/css/custom-css/cloud-service.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/big-data.css" />
+   
+
+    <!-- mediaquery --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
+  </head>
+  <body>
+    <!-- header -------------------------------------------------------------------------------- -->
+
+    <header class="container-fluid" id="header">
+      <div
+        class="container-ctm d-flex justify-content-between align-items-center"
+      >
+        <div class="logo navbar-brand">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="Bigbyte Logo" />
+          </a>
+        </div>
+
+        <!-- menu --------------------------------------------------------------- -->
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Company</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Manufacturing </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">HealthCare </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Digital(IOT)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile menu toogle ------------------------------------------------- -->
+        <button
+          class="mobile-menu-toggle"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- mobile menu overlay ------------------------------------------------- -->
+         <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav
+              class="navbar navbar-expand align-items-center justify-content-center"
+            >
+              <div class="">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul
+                    class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                      <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Manufacturing </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">HealthCare </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Digital(IOT)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- side button ---------------------------------------------------------------------- -->
+
+        <div class="btn-ctm">
+          <button id="#">Login</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- llm banner ------------------------------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-banner">
+      <div class="container-ctm row align-items-center">
+        <div class="col-md-12 align-items-center banner-text">
+          <h1 class="abt-hd1">
+           Data Platforms That Power
+            <span class="spl-txt"
+              > <br />
+             AI Success</span
+            >
+          </h1>
+          <span class="bnr-decoration"></span>
+          <p class="bnr-p-txt">
+          Build AI-ready data infrastructure that accelerates insights, reduces costs, and creates sustainable competitive advantages
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm about section------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="about">
+      <div class="container-ctm">
+        <div class="row justify-content-between align-items-center gap-5">
+          <div class="left col-lg-5">
+            <img src="assets/image/about-img.webp" alt="" srcset="" />
+          </div>
+          <div class="right col-lg-6">
+            <h3 class="hd3 mb-3">
+              Transform Enterprise Data 
+              <span class="spl-txt">Into Your Strategic AI</span>
+            </h3>
+            <p class="mb-4">
+              <strong>Data Complexity is Blocking AI Innovation</strong>         While enterprises generate massive amounts of data, most struggle to harness its strategic value for AI and advanced analytics. Disparate data sources, legacy infrastructure, and poor data quality create significant barriers to innovation. Organizations spending millions on data initiatives often see minimal AI readiness—turning their data investments into operational overhead rather than competitive advantages.
+      <br><br>
+      <strong>Why Industry Leaders Partner with BigByte</strong>
+      BigByte transforms enterprise data from liability into competitive advantage. Our Data Excellence Framework eliminates silos, accelerates insights delivery, and creates AI-ready foundations for breakthrough innovation. Unlike generic data platforms, we architect custom solutions leveraging Snowflake, Databricks, AWS, Azure, and GCP—delivering enterprise-grade data infrastructure while reducing total cost of ownership. Our clients achieve market-leading data capabilities that power AI success and capture new opportunities faster.
+            </p>
+            <div>
+              <a class="spl-btn" href="#">Transform Your Business</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm portfolio section ------------------------------------------------------- -->
+    <section class="container-fluid" id="llm-portfolio">
+      <div class="container-ctm">
+        <h2 class="hd2">
+         Enterprise Cloud Solutions
+ <br /><span class="spl-txt">Portfolio </span>
+        </h2>
+        <div class="row bottom">
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Data Strategy & Governance</p>
+            <p class="mb-3">
+             <strong>Develop enterprise data strategies that enable AI success.</strong> Our comprehensive frameworks establish robust governance, data quality standards, and master data management programs that transform data into a trusted, reliable strategic asset.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Enterprise Data Strategy Roadmap
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Data Governance Framework Implementation
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Master Data Management & Quality Standards
+              </li>
+            </ul>
+            <p class="blu-txt">
+              Outcome: AI-ready data foundation in 30 days
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Data Platform Modernization</p>
+            <p class="mb-3">
+             <strong>Build scalable, cloud-native data platforms that power AI innovation.</strong> We migrate legacy systems and implement modern data lakehouses using Snowflake, Databricks, and cloud platforms to create unified, high-performance analytics environments.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Cloud Data Warehouse Implementation
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Data Lake & Lakehouse Architecture
+ 
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Legacy System Migration & Optimization
+              </li>
+            </ul>
+            <p class="blu-txt">
+              Result: 50% infrastructure cost reduction guaranteed
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Data Integration & Pipeline Automation</p>
+            <p class="mb-3">
+              <strong>Automate data flows with enterprise-grade ETL/ELT pipelines.</strong> Our robust, automated pipelines integrate diverse data sources using AWS Glue, Azure Data Factory, Fivetran, and dbt to ensure reliable data processing and transformation.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Automated ETL/ELT Pipeline Development
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Multi-Source Data Integration
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> DataOps & Pipeline Orchestration
+              </li>
+              <p class="blu-txt">
+              Impact: 60% reduction in manual data processes
+              </p>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Real-Time Data Processing</p>
+            <p class="mb-3">
+            <strong>Enable instant decision-making with streaming data architectures.</strong> Build real-time processing systems using Kafka, Kinesis, and Spark Streaming for applications like fraud detection, IoT monitoring, and AI-powered personalization.  
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Streaming Data Architecture Design
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Real-Time Analytics Enablement
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> IoT Data Ingestion & Processing
+              </li>
+            </ul>
+            <p class="blu-txt">
+              Speed: Sub-second data processing capabilities
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Advanced Analytics & BI</p>
+            <p class="mb-3">
+              <strong>Empower business users with self-service analytics and predictive insights.</strong> We integrate data platforms with leading BI tools and develop advanced analytics capabilities that transform data into competitive intelligence.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Self-Service BI Platform Implementation
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Predictive Analytics & Machine Learning
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Interactive Data Visualization & Dashboards
+              </li>
+            </ul>
+            <p class="blu-txt">
+              Outcome: 70% faster insights delivery
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">MLOps & AI Data Infrastructure</p>
+            <p class="mb-3">
+              <strong>Build enterprise-grade foundations for AI and machine learning success.</strong> We implement DataOps and MLOps practices, feature engineering pipelines, and data preparation workflows optimized for AI model training and deployment.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI-Ready Data Preparation & Feature Engineering
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> MLOps Pipeline Implementation
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Model Training Data Infrastructure
+              </li>
+            </ul>
+            <p class="blu-txt">
+              Result: Enterprise-ready AI platform
+            </p>
+          </div>
+          <!-- <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Enterprise Resilience</p>
+            <p class="mb-3">
+            Safeguard business operations with cloud-based disaster recovery. Our automated failover systems and business continuity solutions ensure critical services remain operational under any circumstances, meeting aggressive RPO and RTO requirements.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Multi-Region DR Architecture
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Automated Recovery Systems
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Business Continuity Planning
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Industry Cloud Accelerators</p>
+            <p class="mb-3">
+              Accelerate digital transformation with industry-specific cloud solutions. Our pre-built, regulatory-compliant frameworks for Healthcare, Financial Services, Manufacturing, and Retail deliver faster time-to-value and reduced implementation risk.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Healthcare Cloud (HIPAA-Compliant)
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Financial Services Framework
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Manufacturing IoT Platform
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Enterprise DevOps Transformation</p>
+            <p class="mb-3">
+              Accelerate software delivery with enterprise DevOps practices. We implement automated CI/CD pipelines, infrastructure as code, and deployment orchestration that reduces time-to-market while improving quality and stability.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />CI/CD Pipeline Automation
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Infrastructure as Code (Terraform, CloudFormation)
+
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Release Management Orchestration
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+
+  <!-- llm success section ------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="llm-success">
+      <div class="container-ctm">
+        <h2 class="hd2 text-center mb-4">Industry-Specific </h2>
+        <h2 class="hd2 text-center mb-5">
+          <span class="spl-txt">Data Solutions</span>
+        </h2>
+        <div class="row justify-content-evenly g-5">
+          <div class="col-md-5 col-xl-4 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img  mb-4"><img src="assets/image/Amazon_Web_Services_Logo.svg.png" alt="" srcset="" /></div>
+            <p class="hd4 mb-4">Healthcare Data Platforms</p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />HIPAA-compliant data lakes
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Clinical data integration (EHR, PACS)
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Real-time patient monitoring data
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI-ready genomics data processing
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-5 col-xl-4 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img mb-4"><img src="assets/image/ms-logo.png" alt="" srcset="" /></div>
+            <p class="hd4 mb-4">Financial Services Data</p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" /> Real-time transaction processing
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Market data aggregation & analysis
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Regulatory reporting automation
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI-powered risk analytics
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-md-5 col-xl-4 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img  mb-4"><img src="assets/image/g-logo.png" alt="" srcset="" /></div>
+            <p class="hd4 mb-4">Retail & E-Commerce</p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Unified customer data platforms
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Supply chain & inventory optimization
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />Real-time personalization engines
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI-driven marketing analytics
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm impact section -->
+
+    <section class="container-fluid" id="llm-impact">
+      <div class="container-ctm">
+        <h2 class="hd2">
+          Guaranteed Business <br /><span class="spl-txt"> Impact </span>
+        </h2>
+        <div class="buttom-wrap">
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon6.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>01</p>
+                </div>
+                <p class="hd4">Accelerated Insights Delivery</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  Dramatically reduce time-to-insight through optimized data pipelines and self-service analytics platforms that enable faster decision-making.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon15.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>02</p>
+                </div>
+                <p class="hd4">Infrastructure Cost Optimization</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Substantially lower total cost of ownership by migrating to efficient cloud data platforms and eliminating redundant data storage systems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon4.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>03</p>
+                </div>
+                <p class="hd4">Enhanced Decision Intelligence</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  Transform strategic and operational decisions with timely, accurate, and comprehensive data accessible through intuitive self-service analytics.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon3.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>04</p>
+                </div>
+                <p class="hd4">Operational Efficiency Gains</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Automate manual data processes, improve data quality, and dramatically reduce data engineering backlog through intelligent automation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>05</p>
+                </div>
+                <p class="hd4">AI & ML Readiness</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  Provide robust, scalable data foundations to power machine learning models, predictive analytics, and generative AI applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>06</p>
+                </div>
+                <p class="hd4">Enterprise Compliance & Security</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Ensure comprehensive data governance, regulatory compliance, and security across the entire data lifecycle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- llm success section ------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-success">
+      <div class="container-ctm">
+     <h2 class="hd2 text-center">Proven Enterprise</h2>
+        <h2 class="hd2 text-center mb-5">
+          <span class="spl-txt">Success</span>
+        </h2>
+        <div class="row justify-content-evenly g-5">
+          <div
+            class="col-md-5 col-xl-4 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="109"
+                  height="109"
+                  viewBox="0 0 109 109"
+                  fill="none"
+                >
+                  <path
+                    d="M45.4167 13.625L36.3333 22.7083V31.7917H22.7084C17.4854 31.7917 14.17 36.3333 13.625 40.875L9.08335 86.2917C8.53835 90.8333 11.5359 95.375 18.1667 95.375H90.8334C97.4642 95.375 100.462 90.8333 99.9167 86.2917L95.375 40.875C94.83 36.3333 91.1059 31.7917 86.2917 31.7917H72.6667V22.7083L63.5833 13.625H45.4167ZM45.4167 22.7083H63.5833V31.7917H45.4167V22.7083ZM49.9583 45.4167H59.0417V59.0417H72.6667V68.125H59.0417V81.75H49.9583V68.125H36.3333V59.0417H49.9583V45.4167Z"
+                    fill="#28166F"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">Global Financial Services Firm</p>
+            <p class="mb-4">
+              Modernized legacy data warehouse to a cloud-based platform, integrating data from multiple sources. Implemented automated data transformation pipelines enabling self-service analytics for hundreds of users.
+            </p>
+            <p>
+              Results: Substantially faster reporting, significant infrastructure cost reduction, dramatic increase in analytics adoption
+            </p>
+          </div>
+          <div
+            class="col-md-5 col-xl-4 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="105"
+                  height="105"
+                  viewBox="0 0 105 105"
+                  fill="none"
+                >
+                  <path
+                    d="M74.375 43.75V26.25L52.5 43.75V26.25L30.625 43.75V17.5H8.75V87.5H96.25V26.25L74.375 43.75ZM39.375 74.375H30.625V61.25H39.375V74.375ZM61.25 74.375H52.5V61.25H61.25V74.375ZM83.125 74.375H74.375V61.25H83.125V74.375Z"
+                    fill="#28166F"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">Major E-Commerce Retailer</p>
+            <p class="mb-4">
+              Built real-time data streaming platform to process customer interaction data, powering personalized recommendations and dynamic pricing engines with sub-second latency.
+            </p>
+            <p>
+              Results: Significant increase in conversion rates, substantial lift in average order value, real-time personalization
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- footer -------------------------------------------------------------------------------------- -->
+    <footer class="containerfluid" id="footer">
+      <div class="container-ctm row g-4">
+        <div class="footer-col-1 col-xl-3 col-md-6 col-12">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="" srcset=""
+          /></a>
+          <p>
+            We transform business vision into market-leading digital solutions.
+            Our enterprise-grade implementations drive innovation, operational
+            excellence, and sustainable competitive advantage.
+          </p>
+        </div>
+        <div class="footer-col-2 col-xl-2 col-md-4 col-6">
+          <h5 class="hd5">Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3 col-xl-3 col-md-5 col-12">
+          <h5 class="hd5">Services</h5>
+          <ul>
+            <li><a href="">LLMs & Gen AI Strategy</a></li>
+            <li><a href="">Cloud Services & Platform</a></li>
+            <li><a href="">Big Data, Analytics & BI</a></li>
+            <li><a href="">Network & Optical Engineering</a></li>
+            <li><a href="">Cybersecurity</a></li>
+            <li><a href="">Enterprise Consultation</a></li>
+            <li><a href="">Product Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4 col-xl-2 col-md-3 col-6">
+          <h5 class="hd5">Industries</h5>
+          <ul>
+            <li><a href="">Manufacturing </a></li>
+            <li><a href="">HealthCare</a></li>
+            <li><a href="">Retail</a></li>
+            <li><a href="">Banking & Finance </a></li>
+            <li><a href="">Insurance</a></li>
+            <li><a href="">Digital(IOT)</a></li>
+            <li><a href="">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-5 col-xl-2 col-md-6">
+          <h5 class="hd5">Follow Us</h5>
+          <ul class="d-flex align-items-center">
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-gitlab"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-figma"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <svg
+          class="editorial"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 12"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    58 18 88 18
+    v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
+          </g>
+        </svg>
+      </div>
+    </footer>
+
+    <!-- javascript --------------------------------------------------------------------------------- -->
+
+    <!-- jquery ------------------------------------------------------------------------------------- -->
+    <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <script src="assets/js/owlcarousel-js/owl.carousel.min.js"></script>
+
+    <!-- custom js------------------------------------------------------------------------------------ -->
+    <script src="assets/js/custom-js/script.js"></script>
+  </body>
+</html>

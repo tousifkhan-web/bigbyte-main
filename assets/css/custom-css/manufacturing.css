@@ -1,0 +1,166 @@
+#llm-banner {
+  background: url(../../image/about-us-banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+h1.abt-hd1 {
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-family: var(--fontfamily2);
+  font-size: 50px;
+  font-weight: 700;
+}
+p.bnr-p-txt {
+  color: rgba(255, 255, 255, 0.92);
+  text-align: center;
+  font-family: var(--fontfamily1);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* portfolio section ************************************** */
+#llm-portfolio {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#llm-portfolio .bottom {
+  margin-top: 100px;
+}
+
+#llm-portfolio .bottom > div > img {
+  width: 150px;
+}
+
+#llm-portfolio .bottom > div {
+  padding: 50px;
+  align-items: center;
+}
+
+#llm-portfolio .bottom > div p:nth-child(2) {
+    color: #27156e;
+    font-family: var(--fontfamily1);
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 21px;
+}
+
+#llm-portfolio .bottom > div p:nth-child(3) {
+  color: #000;
+  font-family: var(--fontfamily1);
+  font-size: clamp(1rem, 0.833rem + 0.463vw, 1.25rem);
+  /* scale between 16px at 576px and 20px at 1440px */
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* llm success ********************************************** */
+#llm-success {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#llm-success .row .success-card .success-img {
+  width: 100px;
+  height: 100px;
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+}
+
+#llm-success .row .success-card p:nth-child(2) {
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--fontfamily1);
+  font-style: normal;
+  font-weight: 700;
+}
+
+#llm-success .row .success-card p:nth-child(3) {
+  color: #7a7d9c;
+  text-align: center;
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#llm-success .row .success-card p:nth-child(4) {
+  color: var(--blue);
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* llm impact ***************************************************** */
+
+#llm-impact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#llm-impact .num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  align-content: center;
+  justify-items: center;
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+#llm-impact .num p:nth-child(1) {
+  color: #fff;
+  text-align: center;
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#llm-impact .content > div:nth-child(1) > p:nth-child(2) {
+  color: var(--blue);
+  font-family: var(--fontfamily1);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 126.667% */
+}
+
+#llm-impact .num-txt {
+  flex-basis: 40px !important;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* justify-items: center; */
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+#llm-impact .content .num-txt2 {
+  color: #7a7d9c;
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#llm-impact .content > div:nth-child(2) p {
+  color: #7a7d9c;
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
