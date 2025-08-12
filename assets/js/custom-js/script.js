@@ -113,10 +113,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // counter js
-// $(".counter").countUp({
-//   time: 1000,
-//   delay: 10,
-// });
+$(".counter").countUp({
+  time: 1000,
+  delay: 10,
+});
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const tabButtons = document.querySelectorAll(".tab-btn");
