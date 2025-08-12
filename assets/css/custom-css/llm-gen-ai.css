@@ -1,5 +1,5 @@
 #llm-banner {
-  background: url(../../image/about-us-banner.png);
+  background: url(../../image/llm-grn-banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ p.bnr-p-txt {
 }
 
 #llm-portfolio .bottom > div > img {
-  width: 150px;
+    width: 85px;
 }
 
 #llm-portfolio .bottom > div {
@@ -161,4 +161,10 @@ p.bnr-p-txt {
   font-style: normal;
   font-weight: 600;
   text-align: center;
+}
+@media (max-width: 1750px) {
+    #values div.bottom .card-ctm > .arrow {
+        max-width: 54%;
+        right: -28px !important;
+    }
 }
