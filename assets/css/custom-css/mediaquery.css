@@ -59,6 +59,11 @@
   #values div.bottom .card-ctm > .arrow {
     display: none;
   }
+
+  .result .bottom > .div2 {
+    display: none;
+  }
+
   #footer .footer-col-1 {
     order: 1;
   }
@@ -115,6 +120,41 @@
   }
   #contact-sec .right .contact-inner-wrap {
     margin-left: -100px;
+  }
+  .result .bottom > .div4,
+  .result .bottom > .div6 {
+    display: none;
+  }
+  .result .bottom > .div1,
+  .result .bottom > .div2,
+  .result .bottom > .div3 {
+    border-bottom: none;
+  }
+  .result .bottom > .div1,
+  .result .bottom > .div3,
+  .result .bottom > .div5 {
+    border-left: 1px solid var(--blue);
+  }
+  .result .bottom > .div1 {
+    order: 1;
+  }
+  .result .bottom > .div5 {
+    order: 2;
+  }
+  .result .bottom > .div3 {
+    order: 3;
+  }
+  .result .bottom > div .deco {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translatey(-50%);
+    width: 30px;
+    height: 1px;
+    background: var(--blue);
+  }
+  .result .bottom > .div5 .deco {
+    top: 50%;
   }
 }
 

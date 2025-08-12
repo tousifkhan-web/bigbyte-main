@@ -1,65 +1,131 @@
 #about-banner {
-  background: 
-    url(../../image/about-us-banner.png);
+  background: url(../../image/about-us-banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-ctm {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 h1.abt-hd1 {
-    text-align: center;
-    color: #FFF;
-    text-align: center;
-    font-family: Urbanist;
-    font-size: 50px;
-    font-weight: 700;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 50px;
+  font-weight: 700;
 }
 p.bnr-p-txt {
-    color: rgba(255, 255, 255, 0.92);
-    text-align: center;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .choose-card {
-    border-radius: 10px;
-    background: #FDFEFF;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
-    padding: 28px;
-    width: 300px;
-    height: auto;
+  border-radius: 10px;
+  background: #fdfeff;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 28px;
+  width: 300px;
+  height: auto;
 }
 .choose-card-txt {
-    color: var(--Dark-Blue, #0E1F51);
-    font-family: Raleway;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 30px; 
+  color: var(--Dark-Blue, #0e1f51);
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
 }
 
 .choose-card > p {
-    color: #000;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; 
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
 }
 p.step-num {
-    opacity: 0.15;
-    background: linear-gradient(180deg, #6ba5d7 0%, #2a1c73 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Caros;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
+  opacity: 0.15;
+  background: linear-gradient(180deg, #6ba5d7 0%, #2a1c73 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Caros;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* result section ********************************** */
+.result {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.result .bottom > div {
+  padding: 30px;
+  position: relative;
+}
+.result .bottom {
+  margin-top: 100px;
+}
+.result .bottom > div .inner-card {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 400px;
+  border: 1px solid #e7daed;
+  padding: 30px 80px;
+  transition: all 0.3s ease-in-out;
+}
+
+.result .bottom > div .inner-card:hover {
+  background: #defdff;
+}
+.result .bottom > div .inner-card > p:nth-child(1) {
+  color: var(--blue);
+  font-family: var(--fontfamily1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.result .bottom > div .inner-card > p:nth-child(2) {
+  color: #7a7d9c;
+  text-align: center;
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.result .bottom > .div1,
+.result .bottom > .div2,
+.result .bottom > .div3 {
+  border-bottom: 1px solid var(--blue);
+}
+
+.result .bottom > div .deco {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 30px;
+  background: var(--blue);
+}
+
+.result .bottom > .div5 .deco {
+  top: 0px;
 }
