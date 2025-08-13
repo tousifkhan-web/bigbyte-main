@@ -318,4 +318,9 @@
   #contact-sec .right {
     padding: 30px;
   }
+  .result .bottom > div .inner-card {
+    padding: 40px 40px;
+    height: 300px;
+    border-radius: 100px;
+  }
 }
