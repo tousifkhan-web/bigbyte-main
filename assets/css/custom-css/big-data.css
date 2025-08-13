@@ -6,3 +6,105 @@
     font-weight: 600;
     text-align: left;
 }
+
+#llm-banner {
+  background: url(../../image/big-dtaa-banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+h1.abt-hd1 {
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-family: var(--fontfamily2);
+  font-size: 50px;
+  font-weight: 700;
+}
+p.bnr-p-txt {
+  color: rgba(255, 255, 255, 0.92);
+  text-align: center;
+  font-family: var(--fontfamily1);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+/* counter section ********************************************************* */
+
+#manuf-counter {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#manuf-counter .counter-wrap {
+  padding: 50px;
+  border-radius: 10px;
+  background-color: rgba(137, 204, 241, 1);
+  row-gap: 40px;
+}
+
+#manuf-counter .counter-wrap > div .count-num {
+  text-align: center;
+  font-family: var(--fontfamily1);
+  color: var(--blue);
+  font-size: 50px;
+}
+
+#manuf-counter .counter-wrap > div > p:nth-child(2) {
+  text-align: center;
+  font-family: var(--fontfamily1);
+  color: var(--blue);
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 10px 0px;
+}
+
+#manuf-counter .counter-wrap > div > p:nth-child(3) {
+  text-align: center;
+  font-family: var(--fontfamily1);
+  color: var(--black);
+  font-size: 14px;
+}
+#about .container-ctm > div {
+    padding: 75px 60px;
+    background-color: var(--bg-blue);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+#llm-banner {
+    background: url(../../image/Hero-Section.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#package .bottom .card-ctm img {
+    width: fit-content;
+    height: 65px;
+}
+#package .bottom .card-ctm img {
+    width: fit-content;
+    height: 50px;
+}
+p.sub-txt {
+    font-family: var(--fontfamily1);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--body-txt-color);
+    text-align: center;
+    padding-bottom: 35px;
+}
+#llm-success .row .success-card .success-img {
+    /* width: 100px;
+    height: 50px; */
+    /* border-radius: 50%; */
+    /* border: 1px solid black; */
+}

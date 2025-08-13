@@ -1,0 +1,8 @@
+#llm-banner {
+  background: url(../../image/enterprise-banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
