@@ -1,10 +1,5 @@
-#llm-portfolio .bottom > div {
-    padding: 50px;
-   align-items: start;
-}
-
 #llm-banner {
-  background: url(../../image/cloud-banner.png);
+  background: url(../../image/iot-banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

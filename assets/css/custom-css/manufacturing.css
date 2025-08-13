@@ -1,5 +1,5 @@
 #llm-banner {
-  background: url(../../image/about-us-banner.png);
+  background: url(../../image/manufacture.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,14 +214,6 @@ p.bnr-p-txt {
     background-color: var(--bg-blue);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
-#llm-banner {
-    background: url(../../image/Hero-Section.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
 #package .bottom .card-ctm img {
     width: fit-content;
     height: 65px;
@@ -238,10 +230,4 @@ p.sub-txt {
     color: var(--body-txt-color);
     text-align: center;
     padding-bottom: 35px;
-}
-#llm-success .row .success-card .success-img {
-    /* width: 100px;
-    height: 50px; */
-    /* border-radius: 50%; */
-    /* border: 1px solid black; */
 }
