@@ -403,12 +403,12 @@ ul.navbar-nav {
 
 /* about ***************************************** */
 #about {
-  margin-top: 100px;
-  margin-bottom: 100px;
+margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #about .container-ctm > div {
-  padding: 200px 60px;
+  padding: 110px 60px;
   background-color: var(--bg-blue);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
@@ -705,8 +705,8 @@ ul.navbar-nav {
 
 /* values ******************************************* */
 #values {
-  margin-top: 100px;
-  margin-bottom: 100px;
+     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #values .container-ctm > div {
@@ -768,8 +768,8 @@ ul.navbar-nav {
 
 /* testimonial******************************************************* */
 #testimonial {
-  margin-top: 100px;
-  margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #testimonial .top > p {
