@@ -1,8 +1,18 @@
 #llm-banner {
-  background: url(../../image/health-banner.png);
+  background: url(../../image/banners/medical-banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center top;
+}
+h1.abt-hd1 {
+    color: #fff;
+    text-align: left;
+    font-family: var(--fontfamily2);
+    font-size: 50px;
+    font-weight: 700;
 }

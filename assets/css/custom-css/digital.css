@@ -6,12 +6,10 @@
     padding-top: 100px;
     padding-bottom: 100px;
     background-attachment: fixed;
-    /* background-size: contain; */
     background-size: contain;
     background-position: center top;
 }
 h1.abt-hd1 {
-    text-align: center;
     color: #fff;
     text-align: left;
     font-family: var(--fontfamily2);

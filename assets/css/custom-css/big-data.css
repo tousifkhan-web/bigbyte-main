@@ -7,22 +7,23 @@
     text-align: left;
 }
 
-#llm-banner {
-  background: url(../../image/big-dtaa-banner.png);
+#big-data-banner {
+  background: url(../../image/banners/big-data-banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
+        background-attachment: fixed;
+    background-size: contain;
+    background-position: center top;
 }
-
 h1.abt-hd1 {
-  text-align: center;
-  color: #fff;
-  text-align: center;
-  font-family: var(--fontfamily2);
-  font-size: 50px;
-  font-weight: 700;
+color: #fff;
+    text-align: left;
+    font-family: var(--fontfamily2);
+    font-size: 50px;
+    font-weight: 700;
 }
 p.bnr-p-txt {
   color: rgba(255, 255, 255, 0.92);

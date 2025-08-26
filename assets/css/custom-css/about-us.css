@@ -1,20 +1,22 @@
 #about-banner {
-  background: url(../../image/banners/company.png);
+  background: url(../../image/banners/about-banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+      background-attachment: fixed;
+    background-size: contain;
+    background-position: center top;
 }
 #about-banner .container-ctm {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 h1.abt-hd1 {
-  text-align: center;
-  color: #fff;
-  text-align: center;
-  font-family: Urbanist;
-  font-size: 50px;
-  font-weight: 700;
+color: #fff;
+    text-align: left;
+    font-family: var(--fontfamily2);
+    font-size: 50px;
+    font-weight: 700;
 }
 p.bnr-p-txt {
   color: rgba(255, 255, 255, 0.92);
