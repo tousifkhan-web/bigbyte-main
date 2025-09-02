@@ -350,8 +350,8 @@ ul.navbar-nav {
 }
 
 #banner .container-ctm {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 
 #banner .left .bnr-decoration {
@@ -1001,4 +1001,33 @@ ul.navbar-nav {
   100% {
     transform: translate(85px, 0%);
   }
+}
+
+/* Globe animation  */
+
+body {
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#globeCanvas {
+  height: 90vh;
+}
+
+.container {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: #fff;
 }
