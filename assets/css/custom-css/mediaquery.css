@@ -39,6 +39,14 @@
   .container-ctm {
     max-width: 960px;
   }
+  #banner .container-ctm {
+    padding-top: 100px;
+  }
+
+  #banner .right .container {
+    margin-top: -100px;
+    margin-bottom: -200px;
+  }
 
   #solution .bottom {
     height: 600px;
@@ -245,6 +253,9 @@
 @media (max-width: 576px) {
   .container-ctm {
     max-width: 100%;
+  }
+  #banner .right .container {
+    width: 100%;
   }
   #about .container-ctm > div {
     padding: 100px 15px;
