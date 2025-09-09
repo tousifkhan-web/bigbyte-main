@@ -344,7 +344,7 @@ $("#globeCanvas")
     };
 
     if (isDragging) {
-      sphere.rotation.y += deltaMove.x * 0.004;
+      sphere.rotation.y += deltaMove.x * 0.008;
     }
 
     previousMousePosition = {
@@ -397,7 +397,7 @@ const animate = function () {
   requestAnimationFrame(animate);
 
   if (!isDragging) {
-    sphere.rotation.y += 0.0005;
+    sphere.rotation.y += 0.0008;
   }
 
   renderer.render(scene, camera);
