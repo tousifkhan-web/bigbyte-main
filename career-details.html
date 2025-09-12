@@ -32,44 +32,10 @@
 
     <!-- custom css --------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="assets/css/custom-css/style.css" />
-    <link rel="stylesheet" href="assets/css/custom-css/contact.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/career.css" />
 
     <!-- mediaquery --------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "YOUR_PUBLIC_KEY",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('f-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                const formData = new FormData(e.target);
-                const obj = {
-                  name: formData.get('fname'),
-                  email: "your@email.id", // Put that emailid in which you want the email to be sent to
-                  title: "Contact Us: " + formData.get('fname'),
-                  message: "Name: " + formData.get('fname') + "\nEmail: " + formData.get('femail') + "\nPhone No : " + formData.get('fphone') + "\nFound You from: " + formData.get('ffind-us')
-                  // Redesign the title and message according to your choice
-                }
-
-                emailjs.send('YOUR_SERVICE_ID', 'TEMPLATE_ID', obj)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                        alert("Your Details has been send successfully!!")
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-
   </head>
   <body>
     <!-- header -------------------------------------------------------------------------------- -->
@@ -290,19 +256,18 @@
                     <li class="nav-item">
                       <a class="nav-link" href="career.html">Careers</a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li> -->
+                    </li>
                   </ul>
                 </div>
               </div>
             </nav>
           </div>
         </div>
-
         <!-- side button ---------------------------------------------------------------------- -->
 
-        <div class="btn-ctm">
+       <div class="btn-ctm">
           <button onclick="window.location.href='contact.html'">
             Contact Us
           </button>
@@ -310,117 +275,217 @@
       </div>
     </header>
 
-    <!-- contact banner ------------------------------------------------------------------------------------ -->
+    <!-- career banner ------------------------------------------------------------------------------------ -->
 
-    <section class="container-fluid" id="contact-banner">
+    <section class="container-fluid" id="career-banner">
       <div class="container-ctm row ">
-        <div class="col-md-12  banner-text">
-          <h1 class="abt-hd1" >
-            We're ready to
-            <span class=""
-              >help you<br />
-              transform your business</span
-            >
+        <div class="col-md-12 banner-text">
+          <h1 class="abt-hd1"  >
+            Join Our <span class="">Talented</span> Team
           </h1>
           <span class="bnr-decoration"></span>
-     
+          <!-- <p class="bnr-p-txt">
+            While others promise digital transformation, we deliver measurable
+            outcomes: 30% <br />cost reduction, 40% efficiency gains, and $50M+
+            in proven savings for Fortune 500 clients
+          </p> -->
         </div>
       </div>
     </section>
 
-    <!-- contact section ----------------------------------------------------------- -->
+<!-- career details section -------------------------------------------------------------------------- -->
 
-    <section class="container-fluid" id="contact-sec">
+<section class="container-fluid" id="career-details">
+  <div class="container-ctm">
+    <div class="career-details-card">
+      <div class="header d-flex justify-content-between align-items-center mb-2">
+        <h3 class=" details-heading  hd5">Technical Support</h3>
+        <i class="fa-regular fa-bookmark"></i>
+      </div>
+
+      <div class="d-flex align-items-center mb-4 gap-3">
+        <span class="badge bg-primary">Full-Time</span>
+        <p class="salary mb-0">Salary: 30,000 INR - 55,000 INR</p>
+      </div>
+
+      <div class="overview mb-4">
+        <h5 class="hd5 mb-3">Project Overview</h5>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+        </p>
+      </div>
+
+      <div class="skills mb-4">
+        <h5 class="hd5 mb-3">Skills</h5>
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="skill-tag">UI Designer</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Landing Page</span>
+        </div>
+      </div>
+
+      <div class="details mb-4">
+        <h5 class="hd5 mb-3">Detail Project</h5>
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center mb-2 gap-2">
+            <i class="fa-solid fa-clock"></i>
+            <p class="mb-0">Full-Time</p>
+          </li>
+          <li class="d-flex align-items-center mb-2 gap-2">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="mb-0">Bangalore</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-end">
+        <button class="right-btn" type="button">Apply now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- package ----------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="package">
       <div class="container-ctm">
-        <div class="row">
-          <div class="col-md-8 left d-flex align-items-center">
-            <div class="form-wrap">
-              <h2 class="hd2">Get in Touch</h2>
-              <p class="mb-4">
-                Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
-                leo molestie vel, ornare non id blandit netus.
-              </p>
-              <form action="" method="post" id="f-form">
-                <input
-                  type="text"
-                  name="fname"
-                  id="fname"
-                  placeholder="Name *"
-                  required
-                />
-                <input
-                  type="email"
-                  name="femail"
-                  id="femail"
-                  placeholder="Email *"
-                  reqired
-                />
-                <input
-                  type="tel"
-                  name="fphone"
-                  id="fphone"
-                  placeholder="Phone number *"
-                  required
-                />
-                <select id="ffind-us" name="ffind-us" required>
-                  <option value="" disabled selected>
-                    How did you find us? *
-                  </option>
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="audi">Audi</option>
-                </select>
-                <input type="submit" value="Send" id="f-submit" />
-              </form>
+        <div class="top d-flex justify-content-between align-items-center">
+          <div class="left">
+            <h2 class="hd2">Why <span class="spl-txt">Work with us</span></h2>
+          </div>
+          <div class="right d-flex gap-2" id="package-carousel-nav">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              id="package-nav-left"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center"
+              id="package-nav-right"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
-          <div class="col-md-4 right">
-            <div class="contact-inner-wrap">
-              <div class="top">
-                <p>Contact Information</p>
-                <p>Say something to start a live chat!</p>
-              </div>
-              <div class="middle">
-                <div class="d-flex">
-                  <i class="fa-solid fa-phone-volume"></i>
-                  <div>
-                    <a href="tel:++1012 3456 789">+1012 3456 789</a>
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <i class="fa-solid fa-envelope"></i>
-                  <div>
-                    <a href="mailto:info@bigbyte.ai">info@bigbyte.ai</a>
-                    <a href="mailto:sales@bigbyte.ai">sales@bigbyte.ai</a>
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <div>
-                    <a href=""
-                      >132 Dartmouth Street Boston,<br />Massachusetts 02156
-                      United States</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="bottom">
-                <ul class="d-flex">
-                  <li>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-brands fa-discord"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="deco1"></div>
-              <div class="deco2"></div>
+        </div>
+        <div class="owl-carousel owl-theme package-slider bottom">
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-1.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Cutting-Edge Technology</h4>
+              <p class="card-txt text-center">
+                Reduce manual work by 50% and improve accuracy by 90%
+              </p>
             </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-3.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Challenging Projects</h4>
+              <p class="card-txt text-center">
+                Increase revenue by 25% through data-driven decisions
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-2.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Growth Opportunities</h4>
+              <p class="card-txt text-center">
+                Cut infrastructure costs by 40% while boosting performance
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-4.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Innovation-First Approach</h4>
+              <p class="card-txt text-center">
+                Ensure 99.9% uptime for mission-critical operations
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-5.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Data-Driven Decision Support</h4>
+              <p class="card-txt text-center">
+                Transform enterprise data into profitable insights through
+                advanced analytics that reveal opportunities and predict market
+                trends
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-6.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+                Security & Compliance Framework
+              </h4>
+              <p class="card-txt text-center">
+                Comprehensive safeguards for AI ethics, data security, and
+                regulatory compliance that maintain stakeholder trust while
+                enabling innovation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact ----------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="contact">
+      <div class="container-ctm">
+        <div
+          class="contact-cta d-flex justify-content-between align-items-center"
+        >
+          <div class="left">
+            <p class="hd2">Ready to Get Measurable AI Results in 90 Days?</p>
+          </div>
+          <div class="right">
+            <a href="#" class="d-flex align-items-center"
+              ><p>Get in touch</p>
+              <span class="spl-txt"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
           </div>
         </div>
       </div>
