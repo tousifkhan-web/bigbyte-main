@@ -339,7 +339,7 @@
       </div>
 
       <div class="text-end">
-        <button class="right-btn" type="button">Apply now</button>
+        <button class="right-btn" type="button"   data-bs-toggle="modal" data-bs-target="#applyModal">Apply now</button>
       </div>
     </div>
   </div>
@@ -584,6 +584,43 @@
       </div>
     </footer>
 
+    <!-- Apply Now Popup Modal -->
+<div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content career-apply-modal">
+      
+      <!-- Header with title + close button -->
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Apply for this Job</h5>
+        <button type="button" class="btn-close custom-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <!-- Body with form -->
+      <div class="modal-body">
+        <form id="applyForm">
+          <div class="mb-3">
+            <label for="applicantName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="applicantName" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="applicantEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="applicantEmail" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="resumeUpload" class="form-label">Upload Resume</label>
+            <input class="form-control" type="file" id="resumeUpload" accept=".pdf,.doc,.docx" required>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="right-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     <!-- javascript --------------------------------------------------------------------------------- -->
 
     <!-- jquery ------------------------------------------------------------------------------------- -->
@@ -601,5 +638,54 @@
 
     <!-- custom js------------------------------------------------------------------------------------ -->
     <script src="assets/js/custom-js/script.js"></script>
+    
+    
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const applyForm = document.getElementById("applyForm");
+
+    applyForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("applicantName").value.trim();
+      const email = document.getElementById("applicantEmail").value.trim();
+      const resume = document.getElementById("resumeUpload").files[0];
+
+      if (!name || !email || !resume) {
+        alert("Please fill in all fields and upload your resume.");
+        return;
+      }
+
+      console.log("Application Submitted:");
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Resume:", resume.name);
+
+      // Reset form
+      applyForm.reset();
+
+      // Close modal
+      const modalElement = document.getElementById("applyModal");
+      const modalInstance = bootstrap.Modal.getInstance(modalElement);
+      modalInstance.hide();
+
+      // Show success
+      alert(" Your application has been submitted successfully!");
+    });
+
+    // Extra: handle cross (close) button manually
+    document.querySelectorAll(".custom-close").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const modalElement = document.getElementById("applyModal");
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
+      });
+    });
+  });
+</script>
+
+
+
+
   </body>
 </html>
