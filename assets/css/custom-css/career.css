@@ -57,6 +57,7 @@ p.bnr-p-txt {
   background: #fafafa;
   box-shadow: 0 9px 30px 0 rgba(0, 0, 0, 0.17);
   transition: 0.5s;
+      height: 100%;
 }
 
 #career-sec .career-card-ctm:hover {
