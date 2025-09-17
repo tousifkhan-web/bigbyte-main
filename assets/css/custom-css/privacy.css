@@ -33,3 +33,58 @@ ul.list-txt > li {
     border-radius: 0 8px 8px 0;
     margin-top: 20px;
 }
+
+
+
+.rights-grid {
+  margin-top: 30px;
+}
+
+.rights-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+}
+
+.rights-card i {
+  font-size: 32px;
+  color: #29166F; /* brand accent */
+  margin-bottom: 15px;
+}
+
+.rights-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #27166e; /* matches your headings */
+}
+
+.rights-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.rights-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.rights-contact p {
+  font-size: 15px;
+  color: #333;
+}
+
+.rights-contact a {
+  color: #CA6702;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rights-contact a:hover {
+  text-decoration: underline;
+}
+
