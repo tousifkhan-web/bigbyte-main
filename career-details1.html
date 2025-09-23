@@ -696,37 +696,15 @@ We move fast with standout candidates. If that’s you — we can’t wait to se
             <form id="applyForm">
               <div class="mb-3">
                 <label for="applicantName" class="form-label">Full Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="applicantName"
-                  placeholder="Enter your name"
-                  required
-                />
+                <input type="text" name="name" class="form-control" id="applicantName" placeholder="Enter your name" required>
               </div>
               <div class="mb-3">
-                <label for="applicantEmail" class="form-label"
-                  >Email Address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="applicantEmail"
-                  placeholder="Enter your email"
-                  required
-                />
+                <label for="applicantEmail" class="form-label">Email Address</label>
+                <input type="email" name="email" class="form-control" id="applicantEmail" placeholder="Enter your email" required>
               </div>
               <div class="mb-3">
-                <label for="resumeUpload" class="form-label"
-                  >Upload Resume</label
-                >
-                <input
-                  class="form-control"
-                  type="file"
-                  id="resumeUpload"
-                  accept=".pdf,.doc,.docx"
-                  required
-                />
+                <label for="resumeUpload" class="form-label">Upload Resume</label>
+                <input class="form-control" name="my_file" type="file" id="resumeUpload" accept=".pdf,.doc,.docx,.txt" required>
               </div>
               <div class="text-end">
                 <button type="submit" class="right-btn">Submit</button>
@@ -755,48 +733,67 @@ We move fast with standout candidates. If that’s you — we can’t wait to se
     <!-- custom js------------------------------------------------------------------------------------ -->
     <script src="assets/js/custom-js/script.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const applyForm = document.getElementById("applyForm");
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "fewzSfCzpF3xmKuFt",
+        });
+    })();
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const applyForm = document.getElementById("applyForm");
 
-        applyForm.addEventListener("submit", function (e) {
-          e.preventDefault();
+    applyForm.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-          const name = document.getElementById("applicantName").value.trim();
-          const email = document.getElementById("applicantEmail").value.trim();
-          const resume = document.getElementById("resumeUpload").files[0];
+      const name = document.getElementById("applicantName").value.trim();
+      const email = document.getElementById("applicantEmail").value.trim();
+      const resume = document.getElementById("resumeUpload").files[0];
 
-          if (!name || !email || !resume) {
-            alert("Please fill in all fields and upload your resume.");
-            return;
-          }
+      if (!name || !email || !resume) {
+        alert("Please fill in all fields and upload your resume.");
+        return;
+      }
 
-          console.log("Application Submitted:");
-          console.log("Name:", name);
-          console.log("Email:", email);
-          console.log("Resume:", resume.name);
-
-          // Reset form
-          applyForm.reset();
-
-          // Close modal
-          const modalElement = document.getElementById("applyModal");
-          const modalInstance = bootstrap.Modal.getInstance(modalElement);
-          modalInstance.hide();
-
-          // Show success
-          alert(" Your application has been submitted successfully!");
+      emailjs.sendForm('service_v76dpil', 'template_0q1b2lc', this)
+        .then(function() {
+          alert('Your application has been submitted successfully!');
+        }, function(error) {
+          alert('Failed to send application. Please try again later.');
+          console.log('FAILED...', error);
         });
 
-        // Extra: handle cross (close) button manually
-        document.querySelectorAll(".custom-close").forEach((btn) => {
-          btn.addEventListener("click", () => {
-            const modalElement = document.getElementById("applyModal");
-            const modalInstance = bootstrap.Modal.getInstance(modalElement);
-            modalInstance.hide();
-          });
-        });
+      
+
+      console.log("Application Submitted:");
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Resume:", resume.name);
+
+      // Reset form
+      applyForm.reset();
+
+      // Close modal
+      const modalElement = document.getElementById("applyModal");
+      const modalInstance = bootstrap.Modal.getInstance(modalElement);
+      modalInstance.hide();
+
+      // Show success
+      // alert(" Your application has been submitted successfully!");
+    });
+
+    // Extra: handle cross (close) button manually
+    document.querySelectorAll(".custom-close").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const modalElement = document.getElementById("applyModal");
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
       });
-    </script>
+    });
+  });
+</script>
   </body>
 </html>

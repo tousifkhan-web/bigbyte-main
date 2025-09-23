@@ -682,15 +682,15 @@
         <form id="applyForm">
           <div class="mb-3">
             <label for="applicantName" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="applicantName" placeholder="Enter your name" required>
+            <input type="text" name="name" class="form-control" id="applicantName" placeholder="Enter your name" required>
           </div>
           <div class="mb-3">
             <label for="applicantEmail" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="applicantEmail" placeholder="Enter your email" required>
+            <input type="email" name="email" class="form-control" id="applicantEmail" placeholder="Enter your email" required>
           </div>
           <div class="mb-3">
             <label for="resumeUpload" class="form-label">Upload Resume</label>
-            <input class="form-control" type="file" id="resumeUpload" accept=".pdf,.doc,.docx" required>
+            <input class="form-control" name="my_file" type="file" id="resumeUpload" accept=".pdf,.doc,.docx,.txt" required>
           </div>
           <div class="text-end">
             <button type="submit" class="right-btn">Submit</button>
@@ -720,7 +720,15 @@
 
     <!-- custom js------------------------------------------------------------------------------------ -->
     <script src="assets/js/custom-js/script.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "fewzSfCzpF3xmKuFt",
+        });
+    })();
+</script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const applyForm = document.getElementById("applyForm");
@@ -737,6 +745,16 @@
         return;
       }
 
+      emailjs.sendForm('service_v76dpil', 'template_0q1b2lc', this)
+        .then(function() {
+          alert('Your application has been submitted successfully!');
+        }, function(error) {
+          alert('Failed to send application. Please try again later.');
+          console.log('FAILED...', error);
+        });
+
+      
+
       console.log("Application Submitted:");
       console.log("Name:", name);
       console.log("Email:", email);
@@ -751,7 +769,7 @@
       modalInstance.hide();
 
       // Show success
-      alert(" Your application has been submitted successfully!");
+      // alert(" Your application has been submitted successfully!");
     });
 
     // Extra: handle cross (close) button manually
