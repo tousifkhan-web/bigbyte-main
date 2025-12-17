@@ -42,7 +42,7 @@
         (function() {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
-              publicKey: "YOUR_PUBLIC_KEY",
+              publicKey: "U1Sc4k8qUJIzkE5nq",
             });
         })();
     </script>
@@ -50,21 +50,34 @@
         window.onload = function() {
             document.getElementById('f-form').addEventListener('submit', function(e) {
                 e.preventDefault();
+
+                // Disable submit button to prevent multiple submissions
+                const submitBtn = document.getElementById('f-submit');
+                submitBtn.disabled = true;
+                submitBtn.value = 'Sending...';
+
                 const formData = new FormData(e.target);
                 const obj = {
                   name: formData.get('fname'),
-                  email: "your@email.id", // Put that emailid in which you want the email to be sent to
-                  title: "Contact Us: " + formData.get('fname'),
-                  message: "Name: " + formData.get('fname') + "\nEmail: " + formData.get('femail') + "\nPhone No : " + formData.get('fphone') + "\nFound You from: " + formData.get('ffind-us')
-                  // Redesign the title and message according to your choice
+                  from_name: formData.get('fname'),
+                  from_email: formData.get('femail'),
+                  phone: formData.get('fphone'),
+                  find_us: formData.get('ffind-us'),
+                  message: "Name: " + formData.get('fname') + "\nEmail: " + formData.get('femail') + "\nPhone No: " + formData.get('fphone') + "\nFound You from: " + formData.get('ffind-us')
                 }
 
-                emailjs.send('YOUR_SERVICE_ID', 'TEMPLATE_ID', obj)
+                emailjs.send('service_7xppl0h', 'template_xymct34', obj)
                     .then(() => {
                         console.log('SUCCESS!');
-                        alert("Your Details has been send successfully!!")
+                        alert("✓ Form Submitted Successfully!\n\nThank you for contacting us. We have received your message and will get back to you shortly.");
+                        document.getElementById('f-form').reset();
+                        submitBtn.disabled = false;
+                        submitBtn.value = 'Send';
                     }, (error) => {
                         console.log('FAILED...', error);
+                        alert("✗ Submission Failed\n\nSorry, we couldn't send your message. Please try again or contact us directly at info@bigbyte.ai");
+                        submitBtn.disabled = false;
+                        submitBtn.value = 'Send';
                     });
             });
         }
@@ -316,14 +329,14 @@
       <div class="container-ctm row ">
         <div class="col-md-12  banner-text">
           <h1 class="abt-hd1" >
-            We're ready to
-            <span class=""
-              >help you<br />
-              transform your business</span
+Your business transformation starts here
+            <span class="spl-txt"
+              ><br />
+              </span
             >
           </h1>
           <span class="bnr-decoration"></span>
-     
+
         </div>
       </div>
     </section>
@@ -337,8 +350,7 @@
             <div class="form-wrap">
               <h2 class="hd2">Get in Touch</h2>
               <p class="mb-4">
-                Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
-                leo molestie vel, ornare non id blandit netus.
+                Please share your details below and our team will get in touch with you.
               </p>
               <form action="" method="post" id="f-form">
                 <input
@@ -366,10 +378,10 @@
                   <option value="" disabled selected>
                     How did you find us? *
                   </option>
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="audi">Audi</option>
+                  <option value="Google">Google</option>
+                  <option value="Linkedin">Linkedin</option>
+                  <option value="ChatGPT">ChatGpt</option>
+                  <option value="Others">Others</option>
                 </select>
                 <input type="submit" value="Send" id="f-submit" />
               </form>
