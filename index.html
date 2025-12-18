@@ -158,10 +158,21 @@
         </nav>
 
         <!-- Mobile menu toogle ------------------------------------------------- -->
-        <button
+        <!-- <button
           class="mobile-menu-toggle"
           data-bs-toggle="offcanvas"
           href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button> -->
+        <button
+          class="mobile-menu-toggle"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          aria-label="Open menu"
           role="button"
           aria-controls="offcanvasExample"
         >
