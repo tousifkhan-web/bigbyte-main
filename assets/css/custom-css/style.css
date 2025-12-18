@@ -79,8 +79,8 @@ a {
 .spl-txt {
   color: #281670;
   background-image: linear-gradient(90deg, var(--blue), var(--blue-light) 100%);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -347,11 +347,6 @@ ul.navbar-nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-#banner .container-ctm {
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
 }
 
 #banner .left .bnr-decoration {
@@ -902,7 +897,7 @@ ul.navbar-nav {
   color: var(--white);
   font-family: var(--fontfamily2);
   font-weight: 800;
-      font-size: 40px;
+  font-size: 40px;
 }
 #contact .container-ctm > .contact-cta .right a {
   text-decoration: none;
@@ -967,7 +962,8 @@ ul.navbar-nav {
 #footer .container-ctm .footer-col-5 ul li a .fa-gitlab,
 #footer .container-ctm .footer-col-5 ul li a .fa-github,
 #footer .container-ctm .footer-col-5 ul li a .fa-telegram,
-#footer .container-ctm .footer-col-5 ul li a .fa-facebook-f {
+#footer .container-ctm .footer-col-5 ul li a .fa-facebook-f,
+#footer .container-ctm .footer-col-5 ul li a .fa-linkedin-in {
   color: black;
   -webkit-text-fill-color: rgba(
     0,
