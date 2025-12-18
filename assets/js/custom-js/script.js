@@ -105,11 +105,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Highlight active nav link
   let currentPath = window.location.pathname.split("/").pop() || "index.html";
+
   document.querySelectorAll(".nav-link").forEach((link) => {
     if (link.getAttribute("href") === currentPath) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
+    }
+  });
+  document.querySelectorAll(".dropdown-item").forEach((item) => {
+    if (item.getAttribute("href") === currentPath) {
+      // Mark dropdown item active (optional)
+      item.classList.add("active");
+
+      // ALSO activate parent dropdown toggle
+      const dropdownToggle = item
+        .closest(".dropdown")
+        .querySelector(".dropdown-toggle");
+
+      dropdownToggle.classList.add("active");
     }
   });
 
