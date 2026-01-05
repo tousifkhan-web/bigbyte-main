@@ -986,6 +986,14 @@ textarea#fmessage {
   padding-bottom: 50px;
 }
 
+.connected{
+  margin-bottom: 15px !important;
+}
+
+.footer-contact{
+  margin-bottom: 15px;
+}
+
 #footer .container-ctm .footer-col-1 p {
   color: var(--black);
   font-family: var(--fontfamily1);
