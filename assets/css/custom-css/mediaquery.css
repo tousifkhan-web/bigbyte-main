@@ -39,6 +39,12 @@
   .container-ctm {
     max-width: 960px;
   }
+  ul.navbar-nav {
+    gap: 5px;
+  }
+  #header .navbar .nav-item .nav-link {
+    font-size: 14px;
+  }
   #banner .container-ctm {
     padding-top: 100px;
   }
