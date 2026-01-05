@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<!-- Favicon -->
-   <link rel="icon" type="image/png" href="assets/image/fav-icon/favicon-32x32.png">
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/image/fav-icon/favicon-32x32.png"
+    />
     <!-- owl-carousel --------------------------------------------------------------------------------- -->
     <link
       rel="stylesheet"
@@ -38,52 +42,70 @@
     <!-- mediaquery --------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "U1Sc4k8qUJIzkE5nq",
-            });
-        })();
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "U1Sc4k8qUJIzkE5nq",
+        });
+      })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('f-form').addEventListener('submit', function(e) {
-                e.preventDefault();
+      window.onload = function () {
+        document
+          .getElementById("f-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
 
-                // Disable submit button to prevent multiple submissions
-                const submitBtn = document.getElementById('f-submit');
-                submitBtn.disabled = true;
-                submitBtn.value = 'Sending...';
+            // Disable submit button to prevent multiple submissions
+            const submitBtn = document.getElementById("f-submit");
+            submitBtn.disabled = true;
+            submitBtn.value = "Sending...";
 
-                const formData = new FormData(e.target);
-                const obj = {
-                  name: formData.get('fname'),
-                  from_name: formData.get('fname'),
-                  from_email: formData.get('femail'),
-                  phone: formData.get('fphone'),
-                  find_us: formData.get('ffind-us'),
-                  message: "Name: " + formData.get('fname') + "\nEmail: " + formData.get('femail') + "\nPhone No: " + formData.get('fphone') + "\nFound You from: " + formData.get('ffind-us')
-                }
+            const formData = new FormData(e.target);
+            const obj = {
+              name: formData.get("fname"),
+              from_name: formData.get("fname"),
+              from_email: formData.get("femail"),
+              phone: formData.get("fphone"),
+              find_us: formData.get("ffind-us"),
+              message:
+                "Name: " +
+                formData.get("fname") +
+                "\nEmail: " +
+                formData.get("femail") +
+                "\nPhone No: " +
+                formData.get("fphone") +
+                "\nFound You from: " +
+                formData.get("ffind-us"),
+            };
 
-                emailjs.send('service_7xppl0h', 'template_xymct34', obj)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                        alert("✓ Form Submitted Successfully!\n\nThank you for contacting us. We have received your message and will get back to you shortly.");
-                        document.getElementById('f-form').reset();
-                        submitBtn.disabled = false;
-                        submitBtn.value = 'Send';
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                        alert("✗ Submission Failed\n\nSorry, we couldn't send your message. Please try again or contact us directly at info@bigbyte.ai");
-                        submitBtn.disabled = false;
-                        submitBtn.value = 'Send';
-                    });
-            });
-        }
+            emailjs.send("service_7xppl0h", "template_xymct34", obj).then(
+              () => {
+                console.log("SUCCESS!");
+                alert(
+                  "✓ Form Submitted Successfully!\n\nThank you for contacting us. We have received your message and will get back to you shortly."
+                );
+                document.getElementById("f-form").reset();
+                submitBtn.disabled = false;
+                submitBtn.value = "Send";
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                alert(
+                  "✗ Submission Failed\n\nSorry, we couldn't send your message. Please try again or contact us directly at info@bigbyte.ai"
+                );
+                submitBtn.disabled = false;
+                submitBtn.value = "Send";
+              }
+            );
+          });
+      };
     </script>
-
   </head>
   <body>
     <!-- header -------------------------------------------------------------------------------- -->
@@ -327,19 +349,15 @@
     <!-- contact banner ------------------------------------------------------------------------------------ -->
 
     <section class="container-fluid" id="contact-banner">
-      <div class="container-ctm row ">
-        <div class="col-md-12  banner-text">
-       
-<h1 class="abt-hd1">
-  YOUR BUSINESS TRANSFORMATION 
-  <span class="">
-    <br />STARTS HERE
-  </span>
-</h1>
-```
+      <div class="container-ctm row">
+        <div class="col-md-12 banner-text">
+          <h1 class="abt-hd1">
+            YOUR BUSINESS TRANSFORMATION
+            <span class=""> <br />STARTS HERE </span>
+          </h1>
+          ```
 
           <span class="bnr-decoration"></span>
-
         </div>
       </div>
     </section>
@@ -353,9 +371,15 @@
             <div class="form-wrap">
               <h2 class="hd2">Get in Touch</h2>
               <p class="mb-4">
-                Please share your details below and our team will get in touch with you.
+                Please share your details below and our team will get in touch
+                with you.
               </p>
-              <form action="" method="post" id="f-form">
+              <form
+                action=""
+                method="post"
+                id="f-form"
+                class="d-flex flex-wrap align-items-center justify-content-between"
+              >
                 <input
                   type="text"
                   name="fname"
@@ -363,6 +387,23 @@
                   placeholder="Name *"
                   required
                 />
+                <!-- <div class="d-flex align-items-center justify-content-between"> -->
+                <input
+                  type="text"
+                  name="com-name"
+                  id="com-name"
+                  placeholder="Company Name *"
+                  required
+                />
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  placeholder="Country *"
+                  required
+                />
+                <!-- </div> -->
+                <!-- <div class="d-flex align-items-center justify-content-between"> -->
                 <input
                   type="email"
                   name="femail"
@@ -375,8 +416,14 @@
                   name="fphone"
                   id="fphone"
                   placeholder="Phone number "
-                  
                 />
+                <!-- </div> -->
+                <select id="topic" name="topic" required>
+                  <option value="" disabled selected>Pick a topic *</option>
+                  <option value="Services">Services</option>
+                  <option value="Products">Products</option>
+                  <option value="Others">Others</option>
+                </select>
                 <select id="ffind-us" name="ffind-us" required>
                   <option value="" disabled selected>
                     How did you find us? *
@@ -387,25 +434,27 @@
                   <option value="Others">Others</option>
                 </select>
                 <!-- Message -->
-<!-- <label for="fmessage" class="form-label">
+                <!-- <label for="fmessage" class="form-label">
   Message <span class="text-danger">*</span>
 </label> -->
-<textarea
-  name="fmessage"
-  id="fmessage"
-  rows="4"
-  placeholder="How can we help?"
-  required
-></textarea>
+                <textarea
+                  name="fmessage"
+                  id="fmessage"
+                  rows="4"
+                  placeholder="How can we help?"
+                  required
+                ></textarea>
 
-<!-- Privacy checkbox -->
-<div class="privacy-check">
-  <input type="checkbox" id="privacyCheck" required />
-  <label for="privacyCheck">
-    By checking this box I agree to
-    <a href="privacy.html" target="_blank">Dataflix Privacy Policy</a>
-  </label>
-</div>
+                <!-- Privacy checkbox -->
+                <div class="privacy-check">
+                  <input type="checkbox" id="privacyCheck" required />
+                  <label for="privacyCheck">
+                    By checking this box I agree to
+                    <a href="privacy.html" target="_blank"
+                      >Dataflix Privacy Policy</a
+                    >
+                  </label>
+                </div>
 
                 <input type="submit" value="Send" id="f-submit" />
               </form>
@@ -505,7 +554,7 @@
         <div class="footer-col-5 col-xl-2 col-md-6">
           <h5 class="hd5">Follow Us</h5>
           <ul class="d-flex align-items-center">
-              <!-- <li class="me-3">
+            <!-- <li class="me-3">
               <a href=""><i class="fa-brands fa-facebook-f"></i></a>
             </li>
             <li class="me-3">
@@ -523,15 +572,15 @@
             <li class="me-3">
               <a href=""><i class="fa-brands fa-figma"></i></a>
             </li> -->
-          <li>
-  <a
-    href="https://www.linkedin.com/company/big-byte-ai/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <i class="fa-brands fa-linkedin-in"></i>
-  </a>
-</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/big-byte-ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
