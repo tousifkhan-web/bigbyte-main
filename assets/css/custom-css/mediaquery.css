@@ -263,6 +263,10 @@
     justify-content: center;
   }
 
+  footer form {
+    justify-content: center;
+  }
+
   #contact-sec .row .left {
     padding: 50px;
   }

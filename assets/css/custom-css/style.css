@@ -882,15 +882,15 @@ ul.navbar-nav {
 input[type="checkbox"] {
   width: auto !important;
   height: auto !important;
-  padding: 10px 10px  !important;
+  padding: 10px 10px !important;
 }
 textarea#fmessage {
-    padding: 10px 20px;
-    border: 1px solid #e0e0e0;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-    /* margin-top: 10px; */
+  padding: 10px 20px;
+  border: 1px solid #e0e0e0;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  /* margin-top: 10px; */
 }
 .privacy-check {
   display: flex;
@@ -921,9 +921,6 @@ textarea#fmessage {
   border-color: #1e6fff;
 }
 
-     
-  
-
 .privacy-check input[type="checkbox"]::after {
   content: "";
   position: absolute;
@@ -940,8 +937,6 @@ textarea#fmessage {
 .privacy-check input[type="checkbox"]:checked::after {
   opacity: 1;
 }
-
-
 
 #contact .container-ctm > .contact-cta {
   max-width: 1400px;
@@ -1037,6 +1032,27 @@ textarea#fmessage {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--blue);
   font-size: 25px;
+}
+
+footer form input {
+  display: inline-block;
+  padding: 5px 10px;
+
+  border: 1px solid #e0e0e0;
+}
+footer form .f-sub {
+  color: var(--blue);
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+footer form .f-sub:hover {
+  color: var(--white);
+  background-color: var(--blue);
+  transition: all 0.3s ease-in-out;
 }
 
 .parallax > use {
