@@ -879,6 +879,69 @@ ul.navbar-nav {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+input[type="checkbox"] {
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 10px  !important;
+}
+textarea#fmessage {
+    padding: 10px 20px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+}
+.privacy-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  /* margin-top: 20px; */
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.privacy-check input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cfcfcf;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 3px;
+  transition: all 0.25s ease;
+  background: #fff;
+}
+
+.privacy-check input[type="checkbox"]:checked {
+  background: #27156e;
+  border-color: #1e6fff;
+}
+
+     
+  
+
+.privacy-check input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.privacy-check input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+
 
 #contact .container-ctm > .contact-cta {
   max-width: 1400px;

@@ -10,12 +10,12 @@
     background-position: center top;
 }
 h1.abt-hd1 {
-    color: #fff;
+/* color: #fff; */
     text-align: left;
     font-family: var(--fontfamily2);
     font-size: 50px;
     font-weight: 700;
-            background: linear-gradient(89.88deg, #ffffff 4.69%, #FF9900 20.19%, #75C5F0 45%, #ffbd45 60.83%);
+        background: linear-gradient(89.88deg, #ffffff 4.69%, #FF9900 20.19%, #75C5F0 45%, #ffbd45 60.83%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -1px;

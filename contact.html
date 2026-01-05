@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
+<!-- Favicon -->
+   <link rel="icon" type="image/png" href="assets/image/fav-icon/favicon-32x32.png">
     <!-- owl-carousel --------------------------------------------------------------------------------- -->
     <link
       rel="stylesheet"
@@ -328,13 +329,15 @@
     <section class="container-fluid" id="contact-banner">
       <div class="container-ctm row ">
         <div class="col-md-12  banner-text">
-          <h1 class="abt-hd1" >
-Your business transformation starts here
-            <span class="spl-txt"
-              ><br />
-              </span
-            >
-          </h1>
+       
+<h1 class="abt-hd1">
+  YOUR BUSINESS TRANSFORMATION 
+  <span class="">
+    <br />STARTS HERE
+  </span>
+</h1>
+```
+
           <span class="bnr-decoration"></span>
 
         </div>
@@ -371,8 +374,8 @@ Your business transformation starts here
                   type="tel"
                   name="fphone"
                   id="fphone"
-                  placeholder="Phone number *"
-                  required
+                  placeholder="Phone number "
+                  
                 />
                 <select id="ffind-us" name="ffind-us" required>
                   <option value="" disabled selected>
@@ -383,13 +386,34 @@ Your business transformation starts here
                   <option value="ChatGPT">ChatGpt</option>
                   <option value="Others">Others</option>
                 </select>
+                <!-- Message -->
+<!-- <label for="fmessage" class="form-label">
+  Message <span class="text-danger">*</span>
+</label> -->
+<textarea
+  name="fmessage"
+  id="fmessage"
+  rows="4"
+  placeholder="How can we help?"
+  required
+></textarea>
+
+<!-- Privacy checkbox -->
+<div class="privacy-check">
+  <input type="checkbox" id="privacyCheck" required />
+  <label for="privacyCheck">
+    By checking this box I agree to
+    <a href="privacy.html" target="_blank">Dataflix Privacy Policy</a>
+  </label>
+</div>
+
                 <input type="submit" value="Send" id="f-submit" />
               </form>
             </div>
           </div>
           <div class="col-md-4 right">
             <div class="contact-inner-wrap">
-              <div class="top">
+              <!-- <div class="top">
                 <p>Contact Information</p>
                 <p>Say something to start a live chat!</p>
               </div>
@@ -429,7 +453,7 @@ Your business transformation starts here
                     <a href=""><i class="fa-brands fa-discord"></i></a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
               <div class="deco1"></div>
               <div class="deco2"></div>
             </div>
@@ -481,7 +505,7 @@ Your business transformation starts here
         <div class="footer-col-5 col-xl-2 col-md-6">
           <h5 class="hd5">Follow Us</h5>
           <ul class="d-flex align-items-center">
-            <li class="me-3">
+              <!-- <li class="me-3">
               <a href=""><i class="fa-brands fa-facebook-f"></i></a>
             </li>
             <li class="me-3">
@@ -496,9 +520,18 @@ Your business transformation starts here
             <li class="me-3">
               <a href=""><i class="fa-brands fa-instagram"></i></a>
             </li>
-            <li>
+            <li class="me-3">
               <a href=""><i class="fa-brands fa-figma"></i></a>
-            </li>
+            </li> -->
+          <li>
+  <a
+    href="https://www.linkedin.com/company/big-byte-ai/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+</li>
           </ul>
         </div>
       </div>
