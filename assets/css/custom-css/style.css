@@ -1008,7 +1008,11 @@ textarea#fmessage {
 #footer .container-ctm .footer-col-4 ul li {
   margin-bottom: 20px;
 }
-
+.footer-contact a {
+    color: #47494c;
+    font-weight: 600;
+    text-decoration: none;
+}
 #footer .container-ctm .footer-col-2 ul li a,
 #footer .container-ctm .footer-col-3 ul li a,
 #footer .container-ctm .footer-col-4 ul li a {
