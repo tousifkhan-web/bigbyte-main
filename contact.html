@@ -50,7 +50,8 @@
       (function () {
         // https://dashboard.emailjs.com/admin/account
         emailjs.init({
-          publicKey: "U1Sc4k8qUJIzkE5nq",
+          // publicKey: "U1Sc4k8qUJIzkE5nq",
+          publicKey: "SCoudowy-uYgaYZoY",
         });
       })();
     </script>
@@ -70,9 +71,10 @@
             const obj = {
               name: formData.get("fname"),
               from_name: formData.get("fname"),
-              from_email: formData.get("femail"),
+              email: formData.get("femail"),
               phone: formData.get("fphone"),
               find_us: formData.get("ffind-us"),
+              title: "abcde",
               message:
                 "Name: " +
                 formData.get("fname") +
@@ -84,7 +86,8 @@
                 formData.get("ffind-us"),
             };
 
-            emailjs.send("service_7xppl0h", "template_xymct34", obj).then(
+            // "service_7xppl0h", "template_xymct34"
+            emailjs.send("service_792meog", "template_yj7ycsr", obj).then(
               () => {
                 console.log("SUCCESS!");
                 alert(
@@ -475,7 +478,7 @@
                   <label for="privacyCheck">
                     By checking this box I agree to
                     <a href="privacy.html" target="_blank"
-                      >Dataflix Privacy Policy</a
+                      >Privacy Policy</a
                     >
                   </label>
                 </div>
@@ -578,9 +581,9 @@
               <div class="footer-col-5 col-xl-2 col-md-6">
 <div class="footer-contact">
   <h5 class="hd5  connected" >Stay Connected</h5>
-  <p href="mailto:hello@dataflix.com" class="footer-email">
-    hello@dataflix.com
-  </p>
+  <a href="mailto:contact@bigbyte.ai" class="footer-email">
+    contact@bigbyte.ai
+  </a>
 </div>
           <h5 class="hd5">Follow Us</h5>
           <ul class="d-flex align-items-center">
