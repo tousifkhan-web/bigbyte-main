@@ -102,7 +102,10 @@ p.bnr-p-txt {
   background-color: var(--blue);
   transition: all 0.3s ease-in-out;
 }
-
+.privacy-check a {
+    color: #27156e;
+    font-weight: 600;
+}
 #contact-sec .right {
   background: linear-gradient(
     332deg,
