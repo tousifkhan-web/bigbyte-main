@@ -92,6 +92,9 @@ p.bnr-p-txt {
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
+  color: var(--white);
+  background-color: var(--blue);
+  transition: all 0.3s ease-in-out;
 }
 
 #contact-sec #f-form #f-submit:hover {
