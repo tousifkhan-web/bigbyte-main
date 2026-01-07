@@ -105,3 +105,41 @@
     right: -28px !important;
   }
 }
+
+/* portfolio section ************************************** */
+#llm-portfolio {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#llm-portfolio .bottom {
+  margin-top: 100px;
+}
+
+#llm-portfolio .bottom > div > img {
+  width: 90px;
+}
+
+#llm-portfolio .bottom > div {
+  padding: 50px;
+  align-items: center;
+}
+
+#llm-portfolio .bottom > div p:nth-child(2) {
+  color: #27156e;
+  font-family: var(--fontfamily1);
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  font-size: 21px;
+}
+
+#llm-portfolio .bottom > div p:nth-child(3) {
+  color: #000;
+  font-family: var(--fontfamily1);
+  font-size: clamp(1rem, 0.833rem + 0.463vw, 1.25rem);
+  /* scale between 16px at 576px and 20px at 1440px */
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+}
