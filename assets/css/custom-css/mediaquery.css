@@ -54,6 +54,15 @@
     margin-bottom: -200px;
   }
 
+  .product-bnr {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .product-bnr .container-ctm {
+    padding-top: 0px !important;
+  }
+
   #solution .bottom {
     height: 600px;
   }
@@ -207,6 +216,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #banner .left .btn-sec {
+    justify-content: center;
+  }
+
+  #banner .left .btn-sec button {
+    width: 230px;
   }
 
   #banner .hd1 {

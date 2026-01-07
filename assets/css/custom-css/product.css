@@ -1,3 +1,46 @@
+/* banner **************************************************** */
+
+#banner {
+  background: url(../../image/product-bnr-bg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#banner .left h1 span {
+  color: var(--blue);
+}
+
+#banner .left .bnr-p-txt {
+  color: var(--body-txt-color);
+  font-family: var(--fontfamily1);
+  font-size: clamp(1rem, 0.75rem + 0.694vw, 1.375rem);
+  /* scale between 16px at 576px and 22px at 1440px */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#banner .left button {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #5d6bb2;
+  border: none;
+  color: var(--white);
+  filter: drop-shadow(0px 4px 6px rgba(99, 102, 241, 0.2));
+  flex-wrap: wrap;
+}
+#banner .left button i {
+  font-size: 16px;
+}
+#banner .right img {
+  height: auto;
+}
+
 /* logo section ****************************** */
 .logo-section {
   margin-top: 100px;
