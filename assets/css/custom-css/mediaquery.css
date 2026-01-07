@@ -185,6 +185,10 @@
   .result .bottom > .div5 .deco {
     top: 50%;
   }
+
+  .section3 .deco {
+    display: none !important;
+  }
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -362,5 +366,8 @@
     padding: 40px 40px;
     height: 300px;
     border-radius: 100px;
+  }
+  .section3 .inner-list {
+    padding: 30px;
   }
 }

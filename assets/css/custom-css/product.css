@@ -1,3 +1,44 @@
+/* logo section ****************************** */
+.logo-section {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.logo-section .heading {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+/* section3 ************************* */
+.section3 {
+  background-image: url(../../image/section-bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+
+.section3 .inner-list {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  padding: 50px;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.05));
+}
+
+.section3 .inner-list .left {
+  width: 40px;
+  height: 40px;
+}
+
+.section3 .inner-list .right .upper-txt {
+  font-family: var(--fontfamily1);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.section3 .inner-list .right .lower-txt {
+  font-size: 16px;
+}
+
 /* llm impact ***************************************************** */
 
 #llm-impact {
