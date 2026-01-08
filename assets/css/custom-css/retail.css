@@ -1,22 +1,25 @@
 #llm-banner {
   background: url(../../image/banners/retail-banner.png);
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: center top;
+  background-attachment: fixed;
+  background-position: 80% top;
 }
 h1.abt-hd1 {
-    color: #fff;
-    text-align: left;
-    font-family: var(--fontfamily2);
-    font-size: 50px;
-    font-weight: 700;
-            background: linear-gradient(89.88deg, #ffffff 4.69%, #FF9900 20.19%, #75C5F0 45%, #ffbd45 60.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -1px;
+  color: #fff;
+  text-align: left;
+  font-family: var(--fontfamily2);
+  font-size: clamp(1.875rem, 0.625rem + 3.472vw, 3.75rem);
+  font-weight: 700;
+  background: linear-gradient(
+    89.88deg,
+    #ffffff 4.69%,
+    #ff9900 20.19%,
+    #75c5f0 45%,
+    #ffbd45 60.83%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
 }

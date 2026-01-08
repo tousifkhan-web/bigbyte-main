@@ -1,24 +1,27 @@
 #llm-banner {
   background: url(../../image/banners/manufac-banner.png);
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: center top;
+  background-attachment: fixed;
+  background-position: 80% top;
 }
 h1.abt-hd1 {
-    color: #fff;
-    text-align: left;
-    font-family: var(--fontfamily2);
-    font-size: 50px;
-    font-weight: 700;
-            background: linear-gradient(89.88deg, #ffffff 4.69%, #FF9900 20.19%, #75C5F0 45%, #ffbd45 60.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -1px;
+  color: #fff;
+  text-align: left;
+  font-family: var(--fontfamily2);
+  font-size: clamp(1.875rem, 0.625rem + 3.472vw, 3.75rem);
+  font-weight: 700;
+  background: linear-gradient(
+    89.88deg,
+    #ffffff 4.69%,
+    #ff9900 20.19%,
+    #75c5f0 45%,
+    #ffbd45 60.83%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
 }
 p.bnr-p-txt {
   color: rgba(255, 255, 255, 0.92);
@@ -41,7 +44,7 @@ p.bnr-p-txt {
 }
 
 #llm-portfolio .bottom > div > img {
-    width: 90px;
+  width: 90px;
 }
 
 #llm-portfolio .bottom > div {
@@ -90,12 +93,12 @@ p.bnr-p-txt {
 }
 
 #llm-success .row .success-card p:nth-child(3) {
-    color: #7a7d9c;
-    text-align: left;
-    font-family: var(--fontfamily1);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
+  color: #7a7d9c;
+  text-align: left;
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 #llm-success .row .success-card p:nth-child(4) {
@@ -107,13 +110,12 @@ p.bnr-p-txt {
   text-align: center;
 }
 
-
 #llm-success .row .success-card p:nth-child(2) {
-    color: var(--blue);
-    text-align: left;
-    font-family: var(--fontfamily1);
-    font-style: normal;
-    font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  font-family: var(--fontfamily1);
+  font-style: normal;
+  font-weight: 700;
 }
 /* llm impact ***************************************************** */
 
@@ -215,24 +217,24 @@ p.bnr-p-txt {
   font-size: 14px;
 }
 #about .container-ctm > div {
-    padding: 75px 60px;
-    background-color: var(--bg-blue);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  padding: 75px 60px;
+  background-color: var(--bg-blue);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
 #package .bottom .card-ctm img {
-    width: fit-content;
-    height: 65px;
+  width: fit-content;
+  height: 65px;
 }
 #package .bottom .card-ctm img {
-    width: fit-content;
-    height: 50px;
+  width: fit-content;
+  height: 50px;
 }
 p.sub-txt {
-    font-family: var(--fontfamily1);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    color: var(--body-txt-color);
-    text-align: center;
-    padding-bottom: 35px;
+  font-family: var(--fontfamily1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--body-txt-color);
+  text-align: center;
+  padding-bottom: 35px;
 }

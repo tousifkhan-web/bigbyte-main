@@ -1,13 +1,10 @@
 #contact-banner {
   background: url(../../image/banners/contact-banner.png);
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
   background-attachment: fixed;
-  background-size: contain;
-  background-position: center top;
+  background-position: 80% top;
 }
 h1.abt-hd1 {
   text-align: left;
