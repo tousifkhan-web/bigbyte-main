@@ -12,7 +12,7 @@
 h1.abt-hd1 {
   text-align: left;
   font-family: var(--fontfamily2);
-  font-size: 50px;
+  font-size: clamp(1.875rem, 0.625rem + 3.472vw, 3.75rem);
   font-weight: 700;
   background: linear-gradient(
     89.88deg,
@@ -51,7 +51,7 @@ p.bnr-p-txt {
 }
 
 #contact-sec .row .left {
-  padding: 50px 200px 50px 100px;
+  padding: 50px 100px 50px 100px;
 }
 
 #contact-sec .row .left .form-wrap > p:nth-child(2) {
@@ -103,8 +103,8 @@ p.bnr-p-txt {
   transition: all 0.3s ease-in-out;
 }
 .privacy-check a {
-    color: #27156e;
-    font-weight: 600;
+  color: #27156e;
+  font-weight: 600;
 }
 #contact-sec .right {
   background: linear-gradient(
