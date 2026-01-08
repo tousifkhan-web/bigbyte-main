@@ -1,24 +1,28 @@
 #career-banner {
   background: url(../../image/banners/career-banner.png);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: center top;
+  background-attachment: fixed;
+  background-position: 80% top;
 }
 h1.abt-hd1 {
-/* color: #fff; */
-    text-align: left;
-    font-family: var(--fontfamily2);
-    font-size: 50px;
-    font-weight: 700;
-        background: linear-gradient(89.88deg, #ffffff 4.69%, #FF9900 20.19%, #75C5F0 45%, #ffbd45 60.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -1px;
+  /* color: #fff; */
+  text-align: left;
+  font-family: var(--fontfamily2);
+  font-size: clamp(1.875rem, 0.625rem + 3.472vw, 3.75rem);
+  font-weight: 700;
+  background: linear-gradient(
+    89.88deg,
+    #ffffff 4.69%,
+    #ff9900 20.19%,
+    #75c5f0 45%,
+    #ffbd45 60.83%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
 }
 p.bnr-p-txt {
   color: rgba(255, 255, 255, 0.92);
@@ -61,7 +65,7 @@ p.bnr-p-txt {
   background: #fafafa;
   box-shadow: 0 9px 30px 0 rgba(0, 0, 0, 0.17);
   transition: 0.5s;
-      height: 100%;
+  height: 100%;
 }
 
 #career-sec .career-card-ctm:hover {
@@ -185,7 +189,7 @@ p.bnr-p-txt {
   background: #fff;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .career-details-card .salary {
@@ -201,39 +205,33 @@ p.bnr-p-txt {
   color: #333;
 }
 button.right-btn {
-    width: 130px;
-    padding: 8px 0px;
-    border-radius: 4px;
-    border: 1px solid var(--blue);
-    background: var(--blue);
-    color: #fff;
-    font-family: var(--fontfamily1);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
+  width: 130px;
+  padding: 8px 0px;
+  border-radius: 4px;
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: #fff;
+  font-family: var(--fontfamily1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 span.badge.bg-primary {
-    border-radius: 3px;
-    background: #F1E0FF !important;
-    color: black;
+  border-radius: 3px;
+  background: #f1e0ff !important;
+  color: black;
 }
-h3.hd3.details-heading
- {
-    color: var(--blue)
-#27156e
-;;
-    font-family: var(--fontfamily2);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
+h3.hd3.details-heading {
+  color: var(--blue) #27156e;
+  font-family: var(--fontfamily2);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
 }
 h3.details-heading.hd5 {
-    font-size: 30px;
+  font-size: 30px;
 }
-
-
-
 
 /* Modal wrapper */
 .career-apply-modal {
@@ -252,7 +250,6 @@ h3.details-heading.hd5 {
 
 /* Close (cross) button */
 .custom-close {
-
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -262,7 +259,6 @@ h3.details-heading.hd5 {
   opacity: 1;
   transition: background 0.3s;
 }
-
 
 /* Form fields */
 .career-apply-modal .form-label {
@@ -285,25 +281,23 @@ h3.details-heading.hd5 {
 
 /* Submit button */
 .career-apply-modal .right-btn {
-    width: 130px;
-    padding: 8px 0px;
-    border-radius: 4px;
-    border: 1px solid var(--blue);
-    background: var(--blue);
-    color: #fff;
-    font-family: var(--fontfamily1);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
+  width: 130px;
+  padding: 8px 0px;
+  border-radius: 4px;
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: #fff;
+  font-family: var(--fontfamily1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .career-apply-modal .right-btn:hover {
   background: #341c7c;
 }
 .btn-close:focus {
-    outline: 0;
-    box-shadow: none;
-    opacity: 1;
+  outline: 0;
+  box-shadow: none;
+  opacity: 1;
 }
-
-
