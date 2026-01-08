@@ -54,6 +54,15 @@
     margin-bottom: -200px;
   }
 
+  .product-bnr {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .product-bnr .container-ctm {
+    padding-top: 0px !important;
+  }
+
   #solution .bottom {
     height: 600px;
   }
@@ -185,6 +194,10 @@
   .result .bottom > .div5 .deco {
     top: 50%;
   }
+
+  .section3 .deco {
+    display: none !important;
+  }
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -203,6 +216,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #banner .left .btn-sec {
+    justify-content: center;
+  }
+
+  #banner .left .btn-sec button {
+    width: 230px;
   }
 
   #banner .hd1 {
@@ -362,5 +383,8 @@
     padding: 40px 40px;
     height: 300px;
     border-radius: 100px;
+  }
+  .section3 .inner-list {
+    padding: 30px;
   }
 }

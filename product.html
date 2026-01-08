@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bigbyte</title>
     <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
       href="assets/image/fav-icon/favicon-32x32.png"
     />
+    <!-- google font ---------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- owl-carousel --------------------------------------------------------------------------------- -->
     <link
       rel="stylesheet"
@@ -20,11 +28,10 @@
       href="assets/css/owlcarousel-css/owl.theme.default.min.css"
     />
 
-    <!-- bootstrap ----------------------------------------------------------------------------------- -->
-    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css" />
+    <!-- fancybox ------------------------------------------------------ -->
     <link
       rel="stylesheet"
-      href="assets/css/bootstrap-css/bootstrap-reboot.min.css"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
 
     <!-- font-awesome -------------------------------------------------------------------------------- -->
@@ -35,10 +42,17 @@
     <link rel="stylesheet" href="assets/css/fontawesome/css/brands.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
 
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-css/bootstrap-reboot.min.css"
+    />
+
     <!-- custom css --------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="assets/css/custom-css/style.css" />
-    <link rel="stylesheet" href="assets/css/custom-css/manufacturing.css" />
-    <link rel="stylesheet" href="assets/css/custom-css/digital.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/product.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/llm-gen-ai.css" />
 
     <!-- mediaquery --------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
@@ -82,7 +96,9 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Activation Bridge</a>
+                      <a class="dropdown-item" href="product.html"
+                        >Activation Bridge</a
+                      >
                     </li>
 
                     <!-- <li>
@@ -210,12 +226,33 @@
                     class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column align-items-center"
                   >
                     <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="index.html"
+                      <a class="nav-link active" aria-current="page" href="#"
                         >Home</a
                       >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Products
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="llm-gen-ai.html"
+                            >Activation Bridge</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="enterprise.html"
+                            >Enterprise Consultation</a
+                          >
+                        </li>
+                      </ul>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="about.html">Company</a>
@@ -296,6 +333,7 @@
             </nav>
           </div>
         </div>
+
         <!-- side button ---------------------------------------------------------------------- -->
 
         <div class="btn-ctm">
@@ -306,218 +344,194 @@
       </div>
     </header>
 
-    <!-- manufacturing banner ------------------------------------------------------------------------------------ -->
+    <!-- banner  ---------------------------------------------------------------------------------------->
 
-    <section class="container-fluid" id="llm-banner">
-      <div class="container-ctm row">
-        <div class="col-md-12 banner-text">
-          <h1 class="abt-hd1" style="color: #ffffff">
-            TRANSFORMING ENTERPRISES <br />
-            <span class=""> THROUGH CONNECTED INTELLIGENCE </span>
+    <section class="container-fluid product-bnr" id="banner">
+      <div class="container-ctm row align-items-center">
+        <div class="left col-xl-7">
+          <h1 class="hd1 mb-5">
+            Activate First-Party <br />
+            Data <br />
+            <span>Without Exposing It</span>
           </h1>
 
-          <span class="bnr-decoration"></span>
-          <!-- <p class="bnr-p-txt">
-            In today's hyperconnected world, IoT and AI convergence is
-            redefining business possibilities. Bigbyte delivers enterprise-grade
-            connected solutions that transform data into actionable
-            intelligence, driving unprecedented operational efficiency and
-            innovation.
-          </p> -->
+          <p class="bnr-p-txt mb-5 mt-2">
+            Securely share audiences and conversions from Snowflake to Google
+            and Meta using Confidential Compute—no raw PII ever exposed.
+          </p>
+
+          <div class="d-flex align-items-center gap-3 mt-2 btn-sec flex-wrap">
+            <button type="button">
+              Request Demo <i class="fa-solid fa-arrow-right ms-2"></i>
+            </button>
+            <button type="button">
+              See How It Works <i class="fa-solid fa-arrow-right ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="right col-xl-5 d-flex justify-content-center">
+          <img
+            class="text-center"
+            src="assets/image/product-bnr-img.webp"
+            alt=""
+            srcset=""
+          />
         </div>
       </div>
     </section>
 
-    <!-- manufacturing about section------------------------------------------------------------ -->
+    <!-- about ---------------------------------------------------------------------------------------->
 
     <section class="container-fluid" id="about">
       <div class="container-ctm">
         <div class="row justify-content-between align-items-center gap-5">
           <div class="left col-lg-5">
-            <img
-              src="assets/image/iot-isometric-color-illustration-vector-removebg-preview.png"
-              alt=""
-              srcset=""
-            />
+            <img src="assets/image/about-img2.webp" alt="" srcset="" />
           </div>
           <div class="right col-lg-6">
-            <!-- <h3 class="hd3 mb-3">
-              Transform Your Business with
-              <span class="spl-txt">Enterprise AI Solutions</span>
-            </h3> -->
+            <h3 class="hd3 mb-3">
+              <span class="spl-txt">Bigbyte </span>transforms businesses through
+              AI solutions that actually work
+            </h3>
             <p class="mb-4">
-              The Internet of Things (IoT) is revolutionizing how enterprises
-              operate by connecting physical objects with digital intelligence.
-              These smart, interconnected systems generate vast amounts of
-              real-time data that, when harnessed with AI and analytics, enable
-              predictive insights, autonomous decision-making, and
-              transformative business models. <br /><br />
-              At Bigbyte, we partner with forward-thinking organizations to
-              implement enterprise IoT solutions that bridge the
-              physical-digital divide, creating intelligent ecosystems that
-              drive operational excellence, enhance customer experiences, and
-              unlock new revenue streams in an increasingly connected world.
+              Unlock the full potential of your first-party data without
+              compromising user privacy. Activation Bridge helps advertisers
+              significantly improve campaign performance and Return on Ad Spend
+              (ROAS) by optimizing match rates between your Snowflake
+              environment and major advertising platforms.
             </p>
-            <!-- <div>
-              <a class="spl-btn" href="#">Transform Your Business</a>
-            </div> -->
+            <p class="mb-4">
+              We enable Advertisers to securely share Audience and Conversion
+              data with Google and Facebook directly from Snowflake. Unlike
+              legacy activation methods, Activation Bridge leverages Trusted
+              Execution Environments (TEEs) powered by Confidential Compute.
+            </p>
+            <p class="mb-4">
+              This cutting-edge approach ensures that your sensitive customer
+              data is processed in a secure, hardware-isolated environment. This
+              allows for high-fidelity matching against Google and Facebook
+              users while ensuring that raw Personally Identifiable Information
+              (PII) is never exposed—even during the matching process.
+            </p>
+            <div>
+              <a class="spl-btn" href="#">Get Your AI Strategy Consultation</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- llm portfolio section ------------------------------------------------------- -->
-    <section class="container-fluid" id="llm-portfolio">
+    <!-- logo section ------------------------------------------------------- -->
+    <section class="container-fluid logo-section">
       <div class="container-ctm">
-        <h2 class="hd2">
-          Enterprise IoT <br /><span class="spl-txt">Use Cases </span>
+        <h2 class="hd2 text-center heading">
+          Built for teams that demand privacy, performance, and proof.
         </h2>
-        <div class="row bottom">
-          <div class="col-md-6 col-xl-4 d-flex flex-column">
-            <img src="assets/image/maintanance.png" alt="" srcset="" />
-            <p class="hd4 mb-3 mt-5">
-              Predictive Maintenance & Asset Intelligence
-            </p>
-            <p class="mb-3">
-              Our IoT solutions combine sensor data with advanced analytics to
-              predict equipment failures before they occur, optimize maintenance
-              schedules, and extend asset lifecycles—reducing downtime by up to
-              45% and maintenance costs by 25-30%.
-            </p>
-          </div>
-          <div class="col-md-6 col-xl-4 d-flex flex-column">
-            <img src="assets/image/smart-home.png" alt="" srcset="" />
-            <p class="hd4 mb-3 mt-5">Smart Buildings & Facility Management</p>
-            <p class="mb-3">
-              We implement connected systems that optimize energy usage, space
-              utilization, and environmental conditions while enhancing occupant
-              comfort and safety—reducing energy consumption by 20-30% and
-              operational costs by 15-25%.
-            </p>
-          </div>
-          <div class="col-md-6 col-xl-4 d-flex flex-column">
-            <img
-              src="assets/image/supply-chain-management.png"
-              alt=""
-              srcset=""
-            />
-            <p class="hd4 mb-3 mt-5">Supply Chain Visibility & Optimization</p>
-            <p class="mb-3">
-              Our IoT-enabled supply chain solutions provide real-time
-              visibility into inventory, logistics, and distribution networks,
-              enabling dynamic optimization and proactive issue
-              resolution—improving on-time delivery by 25% and inventory
-              accuracy to 99.5%.
-            </p>
-          </div>
-          <div class="col-md-6 col-xl-4 d-flex flex-column">
-            <img src="assets/image/llm-crad-icon6.png" alt="" srcset="" />
-            <p class="hd4 mb-3 mt-5">Connected Security & Compliance</p>
-            <p class="mb-3">
-              We develop intelligent security systems that integrate physical
-              and digital security through connected sensors, biometrics, and
-              video analytics with AI-powered threat detection—reducing security
-              incidents by 35% and response times by 60%.
-            </p>
-          </div>
-          <div class="col-md-6 col-xl-4 d-flex flex-column">
-            <img src="assets/image/llm-crad-icon5.png" alt="" srcset="" />
-            <p class="hd4 mb-3 mt-5">Enhanced Customer Experiences</p>
-            <p class="mb-3">
-              Our connected customer experience solutions leverage IoT, mobile
-              applications, and location-based technologies to deliver
-              personalized, contextual interactions across physical and digital
-              touchpoints—increasing engagement by 40% and satisfaction scores
-              by 25%.
-            </p>
-          </div>
-          <div class="col-md-6 col-xl-4 d-flex flex-column">
-            <img src="assets/image/digital-twin.png" alt="" srcset="" />
-            <p class="hd4 mb-3 mt-5">Industrial Digital Twins</p>
-            <p class="mb-3">
-              We create virtual replicas of physical assets, systems, and
-              processes that enable real-time monitoring, simulation, and
-              optimization of industrial operations—improving process efficiency
-              by 15-20% and accelerating innovation cycles by 35%.
-            </p>
-          </div>
+        <div
+          class="logo-wrap d-flex align-items-center justify-content-center gap-5 mt-5"
+        >
+          <div><img src="assets/image/logo5.png" alt="" /></div>
+          <div><img src="assets/image/logo6.png" alt="" /></div>
+          <div><img src="assets/image/logo7.png" alt="" /></div>
         </div>
       </div>
     </section>
 
-    <!-- llm success section ------------------------------------------------------------ -->
+    <!-- section3 section ------------------------------------------------------------ -->
 
-    <section class="container-fluid" id="llm-success">
+    <section class="container-fluid section3">
       <div class="container-ctm">
-        <h2 class="hd2 text-center">Real-World</h2>
-        <h2 class="hd2 text-center mb-5">
-          <span class="spl-txt"> IoT Transformation</span>
-        </h2>
-        <div class="row justify-content-evenly g-5">
-          <div class="col-md-5 col-xl-4 d-flex flex-column success-card">
-            <div class="success-img mb-4">
-              <span class="success-icon"
-                ><img src="assets/image/manufacture-icon1.png" />
-              </span>
+        <div class="row justify-content-center g-5 gap-xxl-5">
+          <div class="col-lg-5 col-xl-5 p-3 d-flex flex-column success-card">
+            <p class="hd3 mb-4"><span class="spl-txt">The Problem</span></p>
+            <div class="inner-list">
+              <div class="d-flex gap-2 mb-4">
+                <div class="left flex-shrink-0">
+                  <img src="assets/image/icon1.webp" alt="" />
+                </div>
+                <div class="right">
+                  <p class="upper-txt">
+                    <span class="spl-txt">Snowflake View</span>
+                  </p>
+                  <p class="lower-txt">
+                    Define your audience or conversion events within Snowflake
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2 mb-4">
+                <div class="left flex-shrink-0">
+                  <img src="assets/image/icon3.webp" alt="" />
+                </div>
+                <div class="right">
+                  <p class="upper-txt">
+                    <span class="spl-txt">Encrypted Transfer</span>
+                  </p>
+                  <p class="lower-txt">Replace your manual uploads faster</p>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="left flex-shrink-0">
+                  <img src="assets/image/icon2.webp" alt="" />
+                </div>
+                <div class="right">
+                  <p class="upper-txt">
+                    <span class="spl-txt">Manual Workflows</span>
+                  </p>
+                  <p class="lower-txt">Replace your manual uploads faster</p>
+                </div>
+              </div>
             </div>
-            <p class="hd4 mb-4 text-start">
-              Smart Manufacturing Transformation
-            </p>
-            <p class="mb-4 text-start">
-              For a global industrial manufacturer, we implemented an
-              enterprise-wide IoT platform that connects production equipment,
-              environmental sensors, and quality control systems. This
-              integrated approach enabled predictive maintenance, real-time
-              process optimization, and quality analytics that transformed their
-              operational capabilities.
-            </p>
-            <ul>
-              <li class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/image/bullet2.png" alt="" srcset="" />62%
-                reduction in unplanned downtime across 12 facilities
-              </li>
-              <li class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/image/bullet2.png" alt="" srcset="" />23%
-                increase in overall equipment effectiveness (OEE)
-              </li>
-              <li class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/image/bullet2.png" alt="" srcset="" />$4.5M
-                annual savings in maintenance and energy costs
-              </li>
-            </ul>
           </div>
-          <div class="col-md-5 col-xl-4 d-flex flex-column success-card">
-            <div class="success-img mb-4">
-              <span class="success-icon"
-                ><img src="assets/image/smart-city.png" />
-              </span>
+          <div class="col-lg-5 col-xl-5 p-3 d-flex flex-column success-card">
+            <p class="hd3 mb-4">
+              <span class="spl-txt">The Activation Bridge Solution</span>
+            </p>
+            <div class="inner-list">
+              <div class="d-flex gap-2 mb-4">
+                <div class="left flex-shrink-0">
+                  <img src="assets/image/icon1.webp" alt="" />
+                </div>
+                <div class="right">
+                  <p class="upper-txt">
+                    <span class="spl-txt">Snowflake-native activation</span>
+                  </p>
+                  <p class="lower-txt">
+                    Hardware-isolated matching confidential compute
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2 mb-4">
+                <div class="left flex-shrink-0">
+                  <img src="assets/image/icon3.webp" alt="" />
+                </div>
+                <div class="right">
+                  <p class="upper-txt">
+                    <span class="spl-txt">Trusted Execution Environment</span>
+                  </p>
+                  <p class="lower-txt">
+                    Match data in a hardware-isolated confidential compute
+                    environment
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="left flex-shrink-0">
+                  <img src="assets/image/icon2.webp" alt="" />
+                </div>
+                <div class="right">
+                  <p class="upper-txt">
+                    <span class="spl-txt">Platform Matching</span>
+                  </p>
+                  <p class="lower-txt">
+                    Perform the matching with Google Ads or Meta Ads Manager
+                  </p>
+                </div>
+              </div>
             </div>
-            <p class="hd4 mb-4 text-start">
-              Smart City Infrastructure Optimization
-            </p>
-            <p class="mb-4 text-start">
-              We partnered with a metropolitan authority to develop an
-              intelligent infrastructure management system that integrates
-              traffic, public transit, energy, and environmental monitoring into
-              a unified operations platform with advanced analytics and
-              AI-powered optimization.
-            </p>
-            <ul>
-              <li class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/image/bullet2.png" alt="" srcset="" />28%
-                reduction in average commute times with adaptive traffic
-                management
-              </li>
-              <li class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/image/bullet2.png" alt="" srcset="" />35%
-                energy savings through intelligent street lighting systems
-              </li>
-              <li class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/image/bullet2.png" alt="" srcset="" />42%
-                improvement in air quality monitoring and response
-              </li>
-            </ul>
           </div>
+        </div>
+        <div class="deco d-flex justify-content-center">
+          <img src="assets/image/Vector.webp" alt="" />
         </div>
       </div>
     </section>
@@ -526,11 +540,7 @@
 
     <section class="container-fluid" id="llm-impact">
       <div class="container-ctm">
-        <h2 class="hd2">
-          Bigbyte: Your Partner in <br /><span class="spl-txt"
-            >IoT Transformation
-          </span>
-        </h2>
+        <h2 class="hd2">Expected <span class="spl-txt">Workflow </span></h2>
         <div class="buttom-wrap">
           <div class="row align-items-center justify-content-center mb-4">
             <div class="col-lg-5"></div>
@@ -542,15 +552,16 @@
                 <div class="num me-4">
                   <p>01</p>
                 </div>
-                <p class="hd4">End-to-End IoT Expertise</p>
+                <p class="hd4">Data Preparation</p>
               </div>
               <div class="d-flex">
                 <div class="num-txt me-4">
                   <img src="assets/image/line.png" alt="" srcset="" />
                 </div>
                 <p class="hd4">
-                  spanning hardware integration, edge computing, cloud
-                  platforms, and advanced analytics.
+                  Create a view within Snowflake containing your target audience
+                  or conversion events (including necessary identifiers like
+                  hashed emails, phone numbers, or click IDs).
                 </p>
               </div>
             </div>
@@ -560,22 +571,23 @@
           >
             <div class="col-lg-5"></div>
             <div class="col-lg-2 col-md-3 d-flex justify-content-center">
-              <img src="assets/image/line-icon15.png" alt="" srcset="" />
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
             </div>
             <div class="col-lg-5 col-md-9 content">
               <div class="d-flex align-items-center flex-row-reverse">
                 <div class="num ms-4">
                   <p>02</p>
                 </div>
-                <p class="hd4">AI-Powered IoT Intelligence</p>
+                <p class="hd4">Secure Connection</p>
               </div>
               <div class="d-flex flex-row-reverse">
                 <div class="num-txt ms-4">
                   <img src="assets/image/line.png" alt="" srcset="" />
                 </div>
                 <p class="text-end">
-                  with machine learning models that transform sensor data into
-                  predictive insights and autonomous systems.
+                  Establish a secure connection via Activation Bridge to your
+                  desired destination (Google Ads, Google Marketing Platform, or
+                  Meta Ads Manager).
                 </p>
               </div>
             </div>
@@ -583,22 +595,24 @@
           <div class="row align-items-center justify-content-center mb-4">
             <div class="col-lg-5"></div>
             <div class="col-lg-2 col-md-3 d-flex justify-content-center">
-              <img src="assets/image/line-icon4.png" alt="" srcset="" />
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
             </div>
             <div class="col-lg-5 col-md-9 content">
               <div class="d-flex align-items-center">
                 <div class="num me-4">
                   <p>03</p>
                 </div>
-                <p class="hd4">Industry-Specific Solutions</p>
+                <p class="hd4">Confidential Matching:</p>
               </div>
               <div class="d-flex">
                 <div class="num-txt me-4">
                   <img src="assets/image/line.png" alt="" srcset="" />
                 </div>
                 <p class="hd4">
-                  tailored for manufacturing, healthcare, retail,
-                  transportation, and smart buildings.
+                  Activation Bridge utilizes a Trusted Execution Environment
+                  (TEE) to perform the data handshake. Data is encrypted in
+                  transit, processed within the secure enclave for matching, and
+                  never visible in plaintext outside your environment.
                 </p>
               </div>
             </div>
@@ -615,15 +629,16 @@
                 <div class="num ms-4">
                   <p>04</p>
                 </div>
-                <p class="hd4">Edge-to-Cloud Architecture</p>
+                <p class="hd4">Automated Activation</p>
               </div>
               <div class="d-flex flex-row-reverse">
                 <div class="num-txt ms-4">
                   <img src="assets/image/line.png" alt="" srcset="" />
                 </div>
                 <p class="text-end">
-                  with distributed intelligence that optimizes performance,
-                  reliability, and cost-efficiency.
+                  Matched audiences and conversions are automatically pushed to
+                  the respective ad platform for immediate use in targeting or
+                  measurement.
                 </p>
               </div>
             </div>
@@ -631,95 +646,23 @@
           <div class="row align-items-center justify-content-center mb-4">
             <div class="col-lg-5"></div>
             <div class="col-lg-2 col-md-3 d-flex justify-content-center">
-              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+              <img src="assets/image/line-icon4.png" alt="" srcset="" />
             </div>
             <div class="col-lg-5 col-md-9 content">
               <div class="d-flex align-items-center">
                 <div class="num me-4">
                   <p>05</p>
                 </div>
-                <p class="hd4">Enterprise-Grade Security</p>
+                <p class="hd4">Performance Feedback</p>
               </div>
               <div class="d-flex">
                 <div class="num-txt me-4">
                   <img src="assets/image/line.png" alt="" srcset="" />
                 </div>
                 <p class="hd4">
-                  with comprehensive protection across devices, networks, and
-                  data to mitigate IoT-specific threats.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="row align-items-center justify-content-center flex-row-reverse mb-4"
-          >
-            <div class="col-lg-5"></div>
-            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
-              <img src="assets/image/line-icon1.png" alt="" srcset="" />
-            </div>
-            <div class="col-lg-5 col-md-9 content">
-              <div class="d-flex align-items-center flex-row-reverse">
-                <div class="num ms-4">
-                  <p>06</p>
-                </div>
-                <p class="hd4">Scalable IoT Platforms</p>
-              </div>
-              <div class="d-flex flex-row-reverse">
-                <div class="num-txt ms-4">
-                  <img src="assets/image/line.png" alt="" srcset="" />
-                </div>
-                <p class="text-end">
-                  that accommodate thousands of devices with seamless management
-                  and integration capabilities.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row align-items-center justify-content-center mb-4">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
-              <img src="assets/image/line-icon2.png" alt="" srcset="" />
-            </div>
-            <div class="col-lg-5 col-md-9 content">
-              <div class="d-flex align-items-center">
-                <div class="num me-4">
-                  <p>07</p>
-                </div>
-                <p class="hd4">Multi-Protocol Integration</p>
-              </div>
-              <div class="d-flex">
-                <div class="num-txt me-4">
-                  <img src="assets/image/line.png" alt="" srcset="" />
-                </div>
-                <p class="hd4">
-                  supporting diverse communication standards and legacy systems
-                  for comprehensive coverage.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="row align-items-center justify-content-center flex-row-reverse mb-4"
-          >
-            <div class="col-lg-5"></div>
-            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
-              <img src="assets/image/line-icon1.png" alt="" srcset="" />
-            </div>
-            <div class="col-lg-5 col-md-9 content">
-              <div class="d-flex align-items-center flex-row-reverse">
-                <div class="num ms-4">
-                  <p>08</p>
-                </div>
-                <p class="hd4">Outcomes-Focused Methodology</p>
-              </div>
-              <div class="d-flex flex-row-reverse">
-                <div class="num-txt ms-4">
-                  <img src="assets/image/line.png" alt="" srcset="" />
-                </div>
-                <p class="text-end">
-                  that prioritizes business value and measurable ROI from IoT
-                  investments.
+                  Receive a confirmation log back in Snowflake detailing the
+                  number of records sent and the success rate of the
+                  transmission, allowing you to monitor match effectiveness.
                 </p>
               </div>
             </div>
@@ -727,164 +670,165 @@
         </div>
       </div>
     </section>
-
-    <!-- llm success section ------------------------------------------------------------ -->
-
     <!-- llm success section ------------------------------------------------------------ -->
 
     <section class="container-fluid" id="llm-success">
       <div class="container-ctm">
-        <h2 class="hd2 text-center">Our Enterprise</h2>
-        <h2 class="hd2 text-center mb-5">
-          <span class="spl-txt"> Technology Ecosystem</span>
+        <h2 class="hd2 text-center">
+          Additional <span class="spl-txt">Considerations</span>
         </h2>
-        <p class="sub-txt">
-          Bigbyte partners with the world's leading technology providers to
-          deliver enterprise-grade AI solutions for manufacturing. Our
-          technology partnerships ensure that you benefit from best-in-class
-          infrastructure, frameworks, and platforms combined with our
-          specialized manufacturing domain expertise.
-        </p>
+        <h2 class="hd2 text-center mb-5"></h2>
         <div class="row justify-content-evenly g-5">
           <div
-            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+            class="col-md-5 col-xl-4 d-flex flex-column align-items-center success-card"
           >
-            <div class="success-img">
+            <div class="success-img mb-4">
               <span class="success-icon"
-                ><img src="assets/image/aws-logo.jpg" />
+                ><img
+                  alt=""
+                  class="health-icon"
+                  src="assets/image/medical.png"
+                />
               </span>
             </div>
-            <p class="hd4 mb-4">AWS</p>
+            <p class="hd4 mb-4">Privacy Compliance</p>
+            <p class="mb-4">
+              Designed to support compliance with GDPR and CCPA requirements by
+              minimizing data exposure
+            </p>
+            <p></p>
           </div>
           <div
-            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+            class="col-md-5 col-xl-4 d-flex flex-column align-items-center success-card"
           >
-            <div class="success-img">
-              <span class="success-icon"
-                ><img src="assets/image/ms-logo.png" />
+            <div class="success-img mb-4">
+              <span class="success-icon">
+                <span class="success-icon"
+                  ><img
+                    alt=""
+                    class="health-icon"
+                    src="assets/image/automation.png"
+                  />
+                </span>
               </span>
             </div>
-            <p class="hd4 mb-4">Azure</p>
+            <p class="hd4 mb-4">Support</p>
+            <p class="mb-4">
+              For integration assistance or custom configuration of the Trusted
+              Execution Environment, please contact our support team.
+            </p>
+            <p></p>
           </div>
-          <div
-            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
-          >
-            <div class="success-img">
-              <span class="success-icon"
-                ><img src="assets/image/snowflake.png" />
-              </span>
-            </div>
-            <p class="hd4 mb-4">Snowflake</p>
+        </div>
+      </div>
+    </section>
+    <!-- llm portfolio section ------------------------------------------------------- -->
+    <section class="container-fluid" id="llm-portfolio">
+      <div class="container-ctm">
+        <h2 class="hd2 text-center">
+          Business <span class="spl-txt">Needs</span>
+        </h2>
+        <div class="row bottom">
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/artificial-intelligence.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Accelerating Advertising Revenue</p>
+            <p class="mb-3">
+              Drive higher ROAS by feeding ad algorithms better data. Higher
+              match rates mean your campaigns can target more relevant users and
+              attribute conversions that were previously lost, directly
+              impacting your bottom line.
+            </p>
           </div>
-          <div
-            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
-          >
-            <div class="success-img">
-              <span class="success-icon"
-                ><img src="assets/image/nvidia.png" />
-              </span>
-            </div>
-            <p class="hd4 mb-4">NVIDIA</p>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img src="assets/image/machine-learning.png" alt="" srcset="" />
+            <p class="hd4 mb-3 mt-5">Privacy-First Audience Activation</p>
+            <p class="mb-3">
+              Eliminate the risks associated with traditional data onboarding.
+              Leverage the power of Confidential Compute to activate custom
+              audiences on Google and Facebook without raw data ever leaving a
+              secure state.
+            </p>
           </div>
-          <div
-            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
-          >
-            <div class="success-img">
-              <span class="success-icon"
-                ><img src="assets/image/data-bricks.jpg" />
-              </span>
-            </div>
-            <p class="hd4 mb-4">Databricks</p>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img src="assets/image/bot.png" alt="" srcset="" />
+            <p class="hd4 mb-3 mt-5">Closed-Loop Measurement</p>
+            <p class="mb-3">
+              Bridge the gap between ad spend and business results. Seamlessly
+              sync offline conversion data from Snowflake to ad platforms to
+              validate campaign effectiveness and optimize bidding strategies.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- testimonial -------------------------------------------------------------------------------- -->
+    <!-- work section ------------------------------------------------------------ -->
 
-    <section class="container-fluid" id="testimonial">
+    <section class="container-fluid llm-work" id="llm-success">
       <div class="container-ctm">
-        <div class="top mb-5 d-flex flex-column align-items-center">
-          <h2 class="hd2">
-            <span class="spl-txt">Our Strategic </span>
-          </h2>
-          <h2 class="hd2 mb-4 text-center">Technology Advantages</h2>
-          <p class="text-center">
-            Reduce manual work by 50% and improve accuracy by 90%
-          </p>
+        <h2 class="hd2 text-center">
+          Why It <span class="spl-txt">Works</span>
+        </h2>
+        <h2 class="hd4 text-center mb-5">
+          Why Activation Bridge Is Not Traditional Activation
+        </h2>
+        <div class="row justify-content-center g-5 gap-5">
+          <div class="col-md-5 col-xl-4 p-5 d-flex flex-column success-card">
+            <p class="hd4 mb-4">Traditional Activation</p>
+            <ul class="success-card-bullet">
+              <li class="mb-2">Hashing only</li>
+              <li class="mb-2">Third-party exposure</li>
+              <li class="mb-2">Signal loss</li>
+              <li>Manual workflows</li>
+            </ul>
+            <div class="success-deco"></div>
+          </div>
+          <div class="col-md-5 col-xl-4 p-5 d-flex flex-column success-card">
+            <p class="hd4 mb-4">Activation Bridge</p>
+            <ul class="success-card-bullet">
+              <li class="mb-2">Confidential Compute</li>
+              <li class="mb-2">Hardware-level isolation</li>
+              <li class="mb-2">Higher match fidelity</li>
+              <li>Direct platform delivery</li>
+            </ul>
+            <div class="success-deco"></div>
+          </div>
         </div>
-        <div class="bottom row g-4">
-          <div class="col-md-6 col-xl-3 d-flex flex-column">
-            <div
-              class="company-logo d-flex justify-content-center align-items-center"
-            >
-              <img src="assets/image/brain1.svg" alt="" srcset="" />
-            </div>
-            <div class="card-ctm">
-              <p class="num">1.</p>
-              <h4 class="hd4">AI-Enhanced IoT Intelligence</h4>
-              <p class="card-txt">
-                We combine leading cloud AI services with edge computing to
-                create intelligent IoT systems that can analyze data locally and
-                in the cloud, enabling real-time decision-making and reducing
-                bandwidth costs by up to 70%.
-              </p>
-            </div>
+      </div>
+    </section>
+
+    <!-- about ---------------------------------------------------------------------------------------->
+
+    <section class="container-fluid" id="about">
+      <div class="container-ctm">
+        <div class="row justify-content-between align-items-center gap-5">
+          <div class="left col-lg-5">
+            <img src="assets/image/about-img2.webp" alt="" srcset="" />
           </div>
-          <div
-            class="col-md-6 col-xl-3 d-flex flex-column flex-xl-column-reverse"
-          >
-            <div
-              class="company-logo d-flex justify-content-center align-items-center"
-            >
-              <img src="assets/image/network1.svg" alt="" srcset="" />
-            </div>
-            <div class="card-ctm">
-              <p class="num">2.</p>
-              <h4 class="hd4">Unified IoT Management</h4>
-              <p class="card-txt">
-                Our expertise with enterprise IoT platforms enables centralized
-                device management, secure over-the-air updates, and
-                comprehensive monitoring across thousands of connected
-                endpoints—reducing operational complexity and management costs.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-3 d-flex flex-column">
-            <div
-              class="company-logo d-flex justify-content-center align-items-center"
-            >
-              <img src="assets/image/analytics1.svg" alt="" srcset="" />
-            </div>
-            <div class="card-ctm">
-              <p class="num">3.</p>
-              <h4 class="hd4">IoT Data Integration Excellence</h4>
-              <p class="card-txt">
-                We implement sophisticated data pipelines that seamlessly
-                connect IoT sensors with enterprise systems, data lakes, and
-                analytics platforms, creating a unified data foundation for
-                comprehensive business intelligence.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-xl-3 d-flex flex-column flex-xl-column-reverse"
-          >
-            <div
-              class="company-logo d-flex justify-content-center align-items-center"
-            >
-              <img src="assets/image/cloud1.svg" alt="" srcset="" />
-            </div>
-            <div class="card-ctm">
-              <p class="num">4.</p>
-              <h4 class="hd4">Future-Proof Architecture</h4>
-              <p class="card-txt">
-                Our modular approach to IoT implementation ensures adaptability
-                to emerging technologies, communication protocols, and business
-                requirements, protecting your investment as IoT standards and
-                capabilities evolve.
-              </p>
-            </div>
+          <div class="right col-lg-6">
+            <h3 class="hd3 mb-3">
+              Why <span class="spl-txt">Activation Bridge?</span>
+            </h3>
+            <p class="mb-4">
+              In a post-cookie world, first-party data is your most valuable
+              asset, but privacy regulations and technical barriers often limit
+              its utility. Activation Bridge solves this dilemma by prioritizing
+              security-first interoperability.
+            </p>
+            <p class="mb-4">
+              By utilizing Google’s Trusted Execution Environment and
+              Confidential Compute standards, we provide a level of data hygiene
+              and security that goes beyond standard hashing. This advanced
+              architecture minimizes signal loss, ensuring that more of your
+              Snowflake data matches actual users on ad platforms. The result is
+              larger addressable audiences, more accurate conversion
+              attribution, and a strictly compliant data workflow that satisfies
+              both InfoSec and Marketing teams.
+            </p>
           </div>
         </div>
       </div>
@@ -959,6 +903,10 @@
             </a>
           </div>
           <h5 class="hd5">Follow Us</h5>
+          <!-- <form action="" class="d-flex gap-1 mb-3"> -->
+          <!-- <input type="text" />
+            <input type="submit" value="Send" class="f-sub" /> -->
+          <!-- </form> -->
           <ul class="d-flex align-items-center">
             <!-- <li class="me-3">
               <a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -1020,13 +968,17 @@
     </footer>
 
     <!-- javascript --------------------------------------------------------------------------------- -->
-
+    <!-- <script src="assets/js/custom-js/script.js"></script> -->
     <!-- jquery ------------------------------------------------------------------------------------- -->
-    <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
 
+    <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
     <!-- counter js ---------------------------------------------------- -->
+
     <script src="assets/js/counter-js/jquery.countup.min.js"></script>
     <script src="assets/js/counter-js/jquery.waypoints.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- bootstrap ----------------------------------------------------------------------------------- -->
     <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
@@ -1035,6 +987,9 @@
     <script src="assets/js/owlcarousel-js/owl.carousel.min.js"></script>
 
     <!-- custom js------------------------------------------------------------------------------------ -->
+
+    <script></script>
+
     <script src="assets/js/custom-js/script.js"></script>
   </body>
 </html>
